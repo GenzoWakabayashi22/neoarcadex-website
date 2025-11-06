@@ -2,20 +2,23 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: Arial, sans-serif; color: #fff; background: #1a252f; line-height: 1.6; }
 
+/* Main Logo (Sopra il Hero) */
+.main-logo { text-align: center; padding: 2rem 0; background: #0d1319; }
+.logo-img { width: 400px; height: auto; }
+
 /* Header */
-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #0d1319; position: sticky; top: 0; z-index: 100; }
-.logo { display: flex; align-items: center; }
-.logo-img { width: 200px; height: auto; margin-right: 0.5rem; } /* Aggiustato per il tuo logo */
-.nav-menu { display: flex; list-style: none; }
-.nav-menu li { margin-left: 2rem; }
+header { padding: 1rem 2rem; background: #0d1319; position: sticky; top: 0; z-index: 100; }
+.navbar { text-align: center; }
+.nav-menu { display: inline-flex; list-style: none; }
+.nav-menu li { margin: 0 1rem; }
 .nav-menu a { color: #fff; text-decoration: none; font-size: 0.9rem; }
 .nav-menu a:hover { color: #00aaff; }
 
 /* Hero */
-.hero { position: relative; text-align: center; padding: 4rem 2rem; min-height: 60vh; }
+.hero { position: relative; text-align: center; padding: 2rem; min-height: 60vh; }
 .hero-content { position: relative; z-index: 1; }
-.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-.hero h2 { font-size: 1.5rem; margin-bottom: 2rem; color: #ccc; }
+.hero h1 { font-family: 'Press Start 2P', cursive; font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px #000; } /* Grande e con ombra */
+.hero h2 { font-family: 'Press Start 2P', cursive; font-size: 1.8rem; margin-bottom: 2rem; color: #ccc; }
 .cta-buttons { margin-top: 2rem; }
 .btn-download, .btn-contribute { display: inline-block; padding: 12px 24px; margin: 0 1rem; text-decoration: none; border-radius: 5px; color: #fff; font-weight: bold; }
 .btn-mac { background: #6f42c1; }
@@ -42,9 +45,9 @@ footer a { color: #00aaff; text-decoration: none; }
 
 /* Responsive */
 @media (max-width: 768px) {
+    .logo-img { width: 250px; }
     .nav-menu { display: none; }
-    .logo-img { width: 150px; } /* Riduci il logo su mobile */
-    .hero h1 { font-size: 2rem; }
+    .hero h1 { font-size: 2.5rem; } /* Ridotto su mobile */
     .hero h2 { font-size: 1.2rem; }
     .features-grid { grid-template-columns: 1fr; }
 }
