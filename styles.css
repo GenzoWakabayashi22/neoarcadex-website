@@ -40,8 +40,8 @@ header { display: flex; justify-content: space-between; align-items: center; pad
 .btn-mac { background: #6f42c1; }
 .btn-contribute { background: #28a745; }
 .apple-logo {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     vertical-align: middle;
     margin-right: 8px;
 }
