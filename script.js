@@ -1,21 +1,24 @@
-// Smooth scroll for anchor links
+// Smooth scroll for anchor links (only for in-page anchors like #privacy, #terms)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         
-        // Don't prevent default for modal links
+        // Modal links (#privacy, #terms) use hash-based modal system - don't prevent default
         if (href === '#privacy' || href === '#terms') {
             return;
         }
         
-        e.preventDefault();
+        // For other hash links, check if target exists on current page before scrolling
         const target = document.querySelector(href);
         if (target) {
+            e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             // Close mobile menu if open
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-            hamburger.setAttribute('aria-expanded', 'false');
+            if (navMenu && hamburger) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
         }
     });
 });
