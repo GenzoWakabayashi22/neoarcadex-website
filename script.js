@@ -3,12 +3,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         
-        // Only handle modal links and in-page anchors
+        // Modal links (#privacy, #terms) use hash-based modal system - don't prevent default
         if (href === '#privacy' || href === '#terms') {
             return;
         }
         
-        // For other hash links, check if target exists on current page
+        // For other hash links, check if target exists on current page before scrolling
         const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
