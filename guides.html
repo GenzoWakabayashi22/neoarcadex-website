@@ -6,8 +6,8 @@
     <title>Guides - NeoArcadeX | Documentation & Tutorials</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="NeoArcadeX guides and documentation. Learn how to set up, configure, and get the most out of your retro gaming frontend.">
-    <meta name="keywords" content="NeoArcadeX guides, tutorials, documentation, how-to">
+    <meta name="description" content="NeoArcadeX guides: first‑run wizard, ROM folders, ScreenScraper setup, RetroArch integration, media downloads, and Pro activation.">
+    <meta name="keywords" content="NeoArcadeX guides, tutorials, documentation, RetroArch, ScreenScraper, setup">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -54,13 +54,13 @@
                         <path fill="#fff" d="M28 20l16 12-16 12V20z"/>
                     </svg>
                 </div>
-                <h3>Getting Started</h3>
-                <p>Learn the basics of NeoArcadeX. This guide covers installation, initial setup, and configuring your first emulator to get you gaming in minutes.</p>
+                <h3>First‑Run Setup (Wizard)</h3>
+                <p>Configure your ROM root folder and RetroArch path in minutes.</p>
                 <ul class="guide-topics">
-                    <li>Installing NeoArcadeX on macOS</li>
-                    <li>Initial configuration wizard</li>
-                    <li>Understanding the interface</li>
-                    <li>Setting up your first platform</li>
+                    <li>Selecting the ROM folder</li>
+                    <li>Checking RetroArch and required cores</li>
+                    <li>ScreenScraper credentials (optional)</li>
+                    <li>Creating the recommended structure</li>
                 </ul>
             </div>
             
@@ -71,13 +71,13 @@
                         <path fill="#00aaff" d="M24 28h16v2H24z M24 34h16v2H24z M24 40h10v2H24z"/>
                     </svg>
                 </div>
-                <h3>Importing Your Games</h3>
-                <p>Discover how to import your ROM collection into NeoArcadeX. Learn about supported file formats, organizing your files, and automatic metadata downloading.</p>
+                <h3>Organizing ROMs</h3>
+                <p>Automatic console detection from folder paths with multi‑format support.</p>
                 <ul class="guide-topics">
-                    <li>Supported ROM file formats</li>
-                    <li>Organizing your ROM folders</li>
-                    <li>Bulk import process</li>
-                    <li>Automatic artwork scraping</li>
+                    <li>Structure for 17 systems</li>
+                    <li>Supported formats (.zip, .chd, .cue/.bin, .pbp, .gdi, …)</li>
+                    <li>Fast path‑based detection via FileSystemActor</li>
+                    <li>Tips to avoid duplicates</li>
                 </ul>
             </div>
             
@@ -91,13 +91,64 @@
                         <rect fill="#6f42c1" x="22" y="44" width="14" height="2"/>
                     </svg>
                 </div>
-                <h3>Configuring Emulators</h3>
-                <p>Master emulator configuration for optimal performance. This guide covers emulator settings, controller mapping, graphics options, and troubleshooting common issues.</p>
+                <h3>ScreenScraper</h3>
+                <p>Category‑aware search with smart fallbacks and caching.</p>
                 <ul class="guide-topics">
-                    <li>Installing and linking emulators</li>
-                    <li>Controller configuration</li>
-                    <li>Performance optimization</li>
-                    <li>Platform-specific settings</li>
+                    <li>Credentials and limits</li>
+                    <li>Free vs Premium accounts</li>
+                    <li>Arcade/Console/Disc lookup rules</li>
+                    <li>Downloading covers, screenshots, videos</li>
+                </ul>
+            </div>
+
+            <div class="guide-card">
+                <div class="guide-icon">
+                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect fill="#6f42c1" x="12" y="16" width="40" height="32" rx="2"/>
+                        <path fill="#00aaff" d="M18 22h28v2H18z M18 28h28v2H18z M18 34h20v2H18z"/>
+                    </svg>
+                </div>
+                <h3>RetroArch Integration</h3>
+                <p>Optimal cores, install checks, and session tracking.</p>
+                <ul class="guide-topics">
+                    <li>Selecting the RetroArch path</li>
+                    <li>Verifying and installing cores</li>
+                    <li>Launching games and tracking playtime</li>
+                    <li>Error and crash handling</li>
+                </ul>
+            </div>
+
+            <div class="guide-card">
+                <div class="guide-icon">
+                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle fill="#6f42c1" cx="32" cy="20" r="8"/>
+                        <path fill="#00aaff" d="M20 28h24v2H20z M20 34h24v2H20z"/>
+                    </svg>
+                </div>
+                <h3>Media from Dedicated Server</h3>
+                <p>Download pre‑optimized covers, thumbnails, and videos.</p>
+                <ul class="guide-topics">
+                    <li>Timeouts, concurrency, and retries</li>
+                    <li>System name normalization</li>
+                    <li>Local caching and offline use</li>
+                    <li>Canceling and resuming manually</li>
+                </ul>
+            </div>
+
+            <div class="guide-card">
+                <div class="guide-icon">
+                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect fill="#6f42c1" x="18" y="20" width="28" height="24" rx="2"/>
+                        <path fill="#00aaff" d="M22 24h20v2H22z M22 30h20v2H22z M22 36h14v2H22z"/>
+                    </svg>
+                </div>
+                <h3>Trial & Pro License</h3>
+                <p>How the 7‑day trial works and how to unlock Pro for €5.</p>
+                <ul class="guide-topics">
+                    <li>Server verification and Keychain Device ID</li>
+                    <li>Offline grace period</li>
+                    <li>Activation by code</li>
+                    <li>Troubleshooting common questions</li>
                 </ul>
             </div>
         </div>
@@ -108,7 +159,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>NeoArcadeX</h4>
-                <p>The ultimate macOS frontend for retro gaming</p>
+                <p>Native macOS frontend for retro gaming</p>
             </div>
             
             <div class="footer-section">
@@ -132,9 +183,9 @@
             <div class="footer-section">
                 <h4>Community</h4>
                 <ul>
-                    <li><a href="#" target="_blank">Discord Server</a></li>
-                    <li><a href="#" target="_blank">Forums</a></li>
-                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Discord</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Forums</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
                 </ul>
             </div>
         </div>

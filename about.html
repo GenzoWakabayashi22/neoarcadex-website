@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - NeoArcadeX | Your Frontend for Everything</title>
+    <title>About - NeoArcadeX | Native macOS Frontend for RetroArch</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Learn about NeoArcadeX, the ultimate macOS frontend for retro gaming. Organize your collection, download artwork, and immerse yourself.">
-    <meta name="keywords" content="NeoArcadeX about, retro gaming, game launcher, macOS frontend">
+    <meta name="description" content="Learn about NeoArcadeX: a native macOS frontend built with SwiftUI and Swift Concurrency, integrating RetroArch and ScreenScraper with support for 17 systems.">
+    <meta name="keywords" content="NeoArcadeX, macOS, SwiftUI, RetroArch, ScreenScraper, retro frontend">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -45,49 +45,85 @@
     <!-- About Section -->
     <section id="main-content" class="about page-content">
         <div class="about-content">
-            <h1>Your Frontend for Everything</h1>
-            <p>NeoArcadeX was originally built as an attractive frontend for classic emulators on macOS, but has expanded to support both modern Mac games and emulated console platforms. NeoArcadeX aims to be the one-stop shop for gaming on your Mac, for both modern and historical games.</p>
+            <h1>What is NeoArcadeX</h1>
+            <p>NeoArcadeX is a native macOS frontend that turns managing and launching retro games into a fast, elegant experience. It’s written in Swift using <strong>SwiftUI</strong> and <strong>Swift Concurrency</strong> (async/await, Actors), integrates <strong>RetroArch</strong>, and ships with a highly optimized <strong>ScreenScraper</strong> engine for instant artwork and metadata.</p>
             
-            <h3>Get Up and Running Right Away</h3>
-            <p>NeoArcadeX includes automated import processes for everything from ROM files to classic games. Box art and metadata is automatically downloaded from the NeoArcadeX Games Database, with excellent coverage for your games.</p>
-            
-            <h3>Organize Your Collection</h3>
-            <p>NeoArcadeX supports arranging and filtering by genre, platform, rating, developer, publisher, and much more. You can even use custom status and source fields to classify your games however you choose. NeoArcadeX's interface is incredibly easy to use and powerful all at the same time.</p>
-            
-            <h3>Immerse Yourself</h3>
-            <p>Not only does NeoArcadeX automatically download box art for your games, it also grabs beautiful fanart, screenshots, logos, and more, creating a surprisingly immersive experience. Check out some eye candy below:</p>
-            
+            <h3>Key features</h3>
+            <ul>
+                <li>Smart trial: 7 days, secure Device ID in Keychain, 24h offline grace</li>
+                <li>Pro license: permanent unlock for €5, no invasive DRM</li>
+                <li>17 systems with optimal RetroArch cores and automatic detection</li>
+                <li>Category‑aware ScreenScraper engine with caching and resilient retries</li>
+                <li>Dedicated media server for fast covers, thumbnails, and videos</li>
+                <li>Modern UI: adaptive grid, context menus, drag & drop, dark mode</li>
+                <li>Play stats: time played, last played, launch count; JSON export/import</li>
+            </ul>
+
+            <h3>Tech stack</h3>
+            <ul>
+                <li>SwiftUI + MVVM</li>
+                <li>Swift Concurrency (async/await), Actors for thread safety</li>
+                <li>FileSystemActor for console detection from paths</li>
+                <li>Multi‑level caching for trial, metadata, and media</li>
+            </ul>
+
+            <h3>Recommended folder structure</h3>
+<pre style="white-space:pre-wrap; color:#ccc; background:#1a252f; padding:1rem; border-radius:8px;">
+ROMs/
+├── NeoGeoAES/       (.zip MAME)
+├── NeoGeoCD/        (.cue/.bin/.chd)
+├── Arcade/          (.zip)
+├── Amiga/           (.adf, .lha)
+├── PSX/             (.cue/.bin/.chd, .pbp)
+├── Saturn/          (.cue/.bin/.chd)
+├── SNES/            (.sfc, .smc, .zip)
+├── Megadrive/       (.md, .bin, .gen)
+├── ... (other systems)
+├── Covers/          (per system)
+├── Thumbs/          (thumbnails)
+└── Videos/          (mp4)
+</pre>
+
+            <h3>Not (yet) included</h3>
+            <ul>
+                <li>No built‑in cloud sync</li>
+                <li>No support for newer consoles like GC/Wii/PS2/PSP/DS/N64</li>
+                <li>No per‑game RetroArch overrides via the UI</li>
+            </ul>
+
+            <h3>Download NeoArcadeX</h3>
+            <p>Free 7‑day trial. Pro unlock is a one‑time €5.</p>
+            <div class="cta-buttons">
+                <a href="http://neoarcadex.oldgamers.it/downloads/NeoArcadeX.dmg" class="btn-download btn-mac">
+                    <img src="images/logoapple.png" alt="Apple logo" class="apple-logo" width="32" height="32"> Download for macOS
+                </a>
+            </div>
+
             <div class="screenshots-grid">
                 <div class="screenshot-card">
-                    <img src="images/Amiga Games Collection.png" alt="NeoArcadeX Amiga Games Collection Interface Screenshot" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
-                    <p>Amiga Games Collection</p>
+                    <img src="images/Amiga Games Collection.png" alt="NeoArcadeX — Amiga Collection" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
+                    <p>Amiga Collection</p>
                 </div>
                 <div class="screenshot-card">
-                    <img src="images/Arcade Games Collection.png" alt="NeoArcadeX Arcade Games Collection Interface Screenshot" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
-                    <p>Arcade Games Collection</p>
+                    <img src="images/Arcade Games Collection.png" alt="NeoArcadeX — Arcade Collection" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
+                    <p>Arcade Collection</p>
                 </div>
                 <div class="screenshot-card">
-                    <img src="images/Sega Mega Drive Collection.png" alt="NeoArcadeX Sega Mega Drive Collection Interface Screenshot" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
-                    <p>Sega Mega Drive Collection</p>
+                    <img src="images/Sega Mega Drive Collection.png" alt="NeoArcadeX — Mega Drive Collection" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
+                    <p>Sega Mega Drive</p>
                 </div>
                 <div class="screenshot-card">
-                    <img src="images/Neo Geo Games Collection.png" alt="NeoArcadeX Neo Geo Games Collection Interface Screenshot" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
-                    <p>Neo Geo Games Collection</p>
+                    <img src="images/Neo Geo Games Collection.png" alt="NeoArcadeX — Neo Geo AES Collection" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
+                    <p>Neo Geo AES</p>
                 </div>
                 <div class="screenshot-card">
-                    <img src="images/Neo Geo CD Collection.png" alt="NeoArcadeX Neo Geo CD Collection Interface Screenshot" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
-                    <p>Neo Geo CD Collection</p>
+                    <img src="images/Neo Geo CD Collection.png" alt="NeoArcadeX — Neo Geo CD Collection" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
+                    <p>Neo Geo CD</p>
                 </div>
                 <div class="screenshot-card">
-                    <img src="images/Super Nintendo Collection.png" alt="NeoArcadeX Super Nintendo SNES Collection Interface Screenshot" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
-                    <p>Super Nintendo Collection</p>
+                    <img src="images/Super Nintendo Collection.png" alt="NeoArcadeX — Super Nintendo Collection" width="640" height="480" loading="lazy" onerror="this.style.display='none'">
+                    <p>Super Nintendo</p>
                 </div>
-            </div>
-            
-            <h3>Download NeoArcadeX Now!</h3>
-            <p>NeoArcadeX for macOS is available for free download right here.</p>
-            <div class="cta-buttons">
-                <a href="http://neoarcadex.oldgamers.it/downloads/NeoArcadeX.dmg" class="btn-download btn-mac"><img src="images/logoapple.png" alt="Apple logo" class="apple-logo" width="32" height="32"> Download for macOS</a>
             </div>
         </div>
     </section>
@@ -97,7 +133,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>NeoArcadeX</h4>
-                <p>The ultimate macOS frontend for retro gaming</p>
+                <p>Native macOS frontend for retro gaming</p>
             </div>
             
             <div class="footer-section">
@@ -121,9 +157,9 @@
             <div class="footer-section">
                 <h4>Community</h4>
                 <ul>
-                    <li><a href="#" target="_blank">Discord Server</a></li>
-                    <li><a href="#" target="_blank">Forums</a></li>
-                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Discord</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Forums</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
                 </ul>
             </div>
         </div>
