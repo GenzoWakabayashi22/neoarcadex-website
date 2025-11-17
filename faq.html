@@ -6,8 +6,8 @@
     <title>FAQ - NeoArcadeX | Frequently Asked Questions</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="NeoArcadeX frequently asked questions. Find answers to common questions about installation, configuration, and usage.">
-    <meta name="keywords" content="NeoArcadeX FAQ, questions, support, help">
+    <meta name="description" content="Frequently asked questions about NeoArcadeX: trial, Pro license, RetroArch, ScreenScraper, supported systems, privacy, and requirements.">
+    <meta name="keywords" content="NeoArcadeX FAQ, support, trial, license, RetroArch, ScreenScraper">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -45,75 +45,95 @@
     <!-- FAQ Section -->
     <section id="main-content" class="faq page-content">
         <h1>Frequently Asked Questions</h1>
-        <p class="faq-intro">Find answers to common questions about NeoArcadeX</p>
+        <p class="faq-intro">Quick answers to common questions about NeoArcadeX</p>
         <div class="faq-container">
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>What are the system requirements for NeoArcadeX?</span>
+                    <span>What is NeoArcadeX?</span>
                     <span class="faq-icon" aria-hidden="true">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>NeoArcadeX requires macOS 11.0 (Big Sur) or later, with a minimum of 8 GB RAM (16 GB recommended). You'll need at least 500 MB of disk space for the application, plus additional space for your ROM collection and downloaded artwork. The app works on both Intel and Apple Silicon Macs, with optimizations for Apple's M-series chips.</p>
+                    <p>NeoArcadeX is a native macOS frontend for managing and launching retro games via RetroArch. It downloads covers, screenshots, videos, and metadata from ScreenScraper or from a dedicated media server, with a modern SwiftUI interface.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>Which emulators does NeoArcadeX support?</span>
+                    <span>What are the system requirements?</span>
                     <span class="faq-icon" aria-hidden="true">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>NeoArcadeX supports a wide range of emulators including RetroArch (with all cores), MAME, Dolphin (GameCube/Wii), PCSX2 (PlayStation 2), PPSSPP (PSP), DeSmuME (Nintendo DS), and many more. The app can automatically detect installed emulators and allows you to configure custom emulator paths for any platform.</p>
+                    <p>macOS 11.0 (Big Sur) or later, 8 GB RAM (16 GB recommended), ~500 MB for the app plus additional space for ROMs and artwork/video. See the <a href="requirements.html">Requirements</a> page for details.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>How do I import my ROM collection?</span>
+                    <span>Which platforms are supported?</span>
                     <span class="faq-icon" aria-hidden="true">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Importing ROMs is simple: go to File → Import Games, select your ROM folder, and choose the platform. NeoArcadeX will automatically scan for compatible files and download metadata and artwork from our games database. Supported formats include .zip, .7z, .iso, .bin/.cue, and platform-specific formats. You can also drag and drop ROM files directly into the app.</p>
+                    <p>17 classic systems including Neo Geo AES/CD, Arcade (MAME set), Amiga, PlayStation, Saturn, SNES, Mega Drive, Sega 32X, Sega CD, Dreamcast, PC‑Engine / PC‑Engine CD, 3DO, Game Boy, Game Boy Advance, and Jaguar. NeoArcadeX selects optimal RetroArch cores automatically.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>What's the difference between Free and Premium versions?</span>
+                    <span>Do I need RetroArch installed?</span>
                     <span class="faq-icon" aria-hidden="true">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>The free version of NeoArcadeX includes all core features: game library management, emulator integration, automatic metadata downloads, and basic customization. The Premium version (€5) unlocks advanced features like cloud backup, premium themes, advanced filtering options, batch operations, and priority support. Premium also helps support continued development of NeoArcadeX.</p>
+                    <p>Yes. NeoArcadeX is a frontend and requires RetroArch. The app checks RetroArch and required cores and guides you if anything is missing.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>Where can I get support or join the community?</span>
+                    <span>How do the trial and Pro license work?</span>
                     <span class="faq-icon" aria-hidden="true">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Join our vibrant community on Discord where you can get help, share your setup, and connect with other retro gaming enthusiasts. We also have an active forum for detailed discussions and troubleshooting. For bug reports and feature requests, visit our GitHub repository. Links to all community resources can be found in the footer of this page.</p>
+                    <p>The trial lasts 7 days with server verification and a 24‑hour offline grace period. Pro unlock uses a code (email + server‑side secret) and grants a permanent license stored in Keychain. After activation, it works offline.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>Is NeoArcadeX compatible with Apple Silicon Macs?</span>
+                    <span>Do I need a ScreenScraper account?</span>
                     <span class="faq-icon" aria-hidden="true">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Yes! NeoArcadeX is fully optimized for Apple Silicon (M1, M2, M3, and newer) Macs and runs natively without requiring Rosetta 2. You'll experience excellent performance and battery efficiency on Apple Silicon devices. The app is also compatible with Intel-based Macs running macOS 11.0 or later.</p>
+                    <p>It’s recommended for metadata and artwork. NeoArcadeX adapts to Free and Premium accounts with rate limiting and caching. Alternatively, you can download media from our dedicated server with no daily quota.</p>
                 </div>
             </div>
-            
+
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>Can I use my own game artwork and metadata?</span>
+                    <span>Can I use my own artwork and metadata?</span>
                     <span class="faq-icon" aria-hidden="true">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Absolutely! While NeoArcadeX automatically downloads artwork and metadata, you can customize everything. Right-click any game to edit its information, upload custom artwork, change the title, add tags, and more. You can also organize games into custom collections and categories to suit your preferences.</p>
+                    <p>Absolutely. You can override artwork and game info directly from your library. Thumbnails are regenerated and local edits are preserved.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Does NeoArcadeX send telemetry?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>No. By default, we do not send telemetry. The app contacts servers only to verify trial/license and to fetch metadata/media if you choose to use those features. Email is used only if you subscribe to the newsletter.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Why are disc‑based hashes slow?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Large images (ISO/CHD 2–4GB) can take minutes to hash. NeoArcadeX minimizes SHA1 usage and falls back to ROM name when possible, especially for Arcade/cartridge systems.</p>
                 </div>
             </div>
         </div>
@@ -124,7 +144,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>NeoArcadeX</h4>
-                <p>The ultimate macOS frontend for retro gaming</p>
+                <p>Native macOS frontend for retro gaming</p>
             </div>
             
             <div class="footer-section">
@@ -148,9 +168,9 @@
             <div class="footer-section">
                 <h4>Community</h4>
                 <ul>
-                    <li><a href="#" target="_blank">Discord Server</a></li>
-                    <li><a href="#" target="_blank">Forums</a></li>
-                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Discord</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Forums</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
                 </ul>
             </div>
         </div>

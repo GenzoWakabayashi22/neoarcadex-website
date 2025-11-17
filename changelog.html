@@ -3,22 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog - NeoArcadeX | Version History</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="NeoArcadeX version history and changelog. Track all updates, new features, improvements, and bug fixes.">
-    <meta name="keywords" content="NeoArcadeX changelog, version history, updates, release notes">
-    
-    <!-- Favicon -->
+    <title>Changelog - NeoArcadeX</title>
+    <meta name="description" content="NeoArcadeX release notes and recent improvements.">
     <link rel="icon" type="image/png" href="images/logo.png">
-    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    
-    <!-- Header with Menu -->
+
     <header>
         <div class="logo">
             <a href="index.html">
@@ -42,84 +34,45 @@
         </nav>
     </header>
 
-    <!-- Changelog Section -->
     <section id="main-content" class="changelog page-content">
-        <h1>Changelog</h1>
-        <p class="changelog-intro">Track the evolution of NeoArcadeX with our version history</p>
+        <h2>Release Notes</h2>
+        <p class="changelog-intro">Recent improvements and fixes</p>
+
         <div class="changelog-container">
             <div class="changelog-entry">
                 <div class="changelog-header">
-                    <h3>Version 1.2.0</h3>
-                    <span class="changelog-date">January 15, 2025</span>
+                    <h3>0.9.0 (Preview)</h3>
+                    <span class="changelog-date">2025-01-15</span>
                 </div>
                 <div class="changelog-content">
-                    <h4>New Features</h4>
+                    <h4>New</h4>
                     <ul>
-                        <li>Added support for PlayStation 2 emulation via PCSX2</li>
-                        <li>New grid view customization options with adjustable thumbnail sizes</li>
-                        <li>Automatic controller configuration for popular USB gamepads</li>
-                        <li>Enhanced artwork scraper with support for additional metadata sources</li>
+                        <li>Category‑aware ScreenScraper engine with caching and fallbacks</li>
+                        <li>Support for 17 systems with automatic RetroArch core selection</li>
+                        <li>Dedicated media server for covers, thumbnails, and videos</li>
+                        <li>SwiftUI UI with adaptive grid, dark mode, and drag & drop</li>
                     </ul>
                     <h4>Improvements</h4>
                     <ul>
-                        <li>Faster game library scanning and indexing</li>
-                        <li>Improved memory usage for large collections (10,000+ games)</li>
-                        <li>Better Apple Silicon optimization</li>
+                        <li>7‑day trial with Device ID in Keychain and offline grace period</li>
+                        <li>Robust error handling for timeouts, rate limits, and retries</li>
                     </ul>
-                </div>
-            </div>
-            
-            <div class="changelog-entry">
-                <div class="changelog-header">
-                    <h3>Version 1.1.0</h3>
-                    <span class="changelog-date">November 28, 2024</span>
-                </div>
-                <div class="changelog-content">
-                    <h4>New Features</h4>
+                    <h4>Known</h4>
                     <ul>
-                        <li>Added filter and search functionality with real-time results</li>
-                        <li>Support for custom game categories and collections</li>
-                        <li>Backup and restore functionality for game library</li>
-                    </ul>
-                    <h4>Bug Fixes</h4>
-                    <ul>
-                        <li>Fixed artwork download issues for certain game databases</li>
-                        <li>Resolved crash when launching games with special characters in path</li>
-                        <li>Fixed dark mode theme inconsistencies</li>
-                        <li>Corrected ROM file detection for .cue/.bin format games</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="changelog-entry">
-                <div class="changelog-header">
-                    <h3>Version 1.0.0</h3>
-                    <span class="changelog-date">September 10, 2024</span>
-                </div>
-                <div class="changelog-content">
-                    <h4>Initial Release</h4>
-                    <ul>
-                        <li>Beautiful game library interface with grid and list views</li>
-                        <li>Support for 20+ classic gaming platforms</li>
-                        <li>Integration with popular emulators (RetroArch, MAME, Dolphin, etc.)</li>
-                        <li>Automatic metadata and artwork download</li>
-                        <li>Customizable themes and UI layouts</li>
-                        <li>Game favorites and recently played tracking</li>
-                        <li>Native macOS design with dark mode support</li>
+                        <li>No HTTP range resume for media downloads yet</li>
+                        <li>SHA1 hashing is slow for very large disc images</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h4>NeoArcadeX</h4>
-                <p>The ultimate macOS frontend for retro gaming</p>
+                <p>Native macOS frontend for retro gaming</p>
             </div>
-            
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
@@ -129,7 +82,6 @@
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
-            
             <div class="footer-section">
                 <h4>Legal</h4>
                 <ul>
@@ -137,13 +89,12 @@
                     <li><a href="#terms">Terms of Service</a></li>
                 </ul>
             </div>
-            
             <div class="footer-section">
                 <h4>Community</h4>
                 <ul>
-                    <li><a href="#" target="_blank">Discord Server</a></li>
-                    <li><a href="#" target="_blank">Forums</a></li>
-                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Discord</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Forums</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
                 </ul>
             </div>
         </div>

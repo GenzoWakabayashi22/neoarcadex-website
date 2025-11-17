@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeoArcadeX - macOS Frontend for Retrogaming | Game Launcher & Emulator</title>
+    <title>NeoArcadeX — macOS Frontend for RetroArch | Library, Metadata, 17 Systems</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="NeoArcadeX is a beautiful, powerful macOS game launcher and frontend for retro gaming emulation. Organize your game collection with style, support for multiple emulators, automatic metadata and artwork download.">
-    <meta name="keywords" content="macOS game launcher, retro gaming, emulator frontend, game collection manager, NeoArcadeX, ROM organizer, arcade emulation, macOS gaming">
+    <meta name="description" content="NeoArcadeX is a native macOS frontend for RetroArch with fast ScreenScraper integration, automatic artwork and metadata, and smart 7‑day trial. Supports 17 classic systems with optimal cores.">
+    <meta name="keywords" content="NeoArcadeX, macOS, RetroArch, retro gaming frontend, ScreenScraper, ROM manager, game launcher, metadata, artwork">
     <link rel="canonical" href="https://neoarcadex.oldgamers.it/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://neoarcadex.oldgamers.it/">
-    <meta property="og:title" content="NeoArcadeX - macOS Frontend for Retrogaming">
-    <meta property="og:description" content="The ultimate macOS game launcher for retro gaming. Organize your collection with style, support for multiple emulators, automatic metadata and artwork.">
+    <meta property="og:title" content="NeoArcadeX — macOS Frontend for RetroArch">
+    <meta property="og:description" content="Native macOS frontend for RetroArch. Organize your ROM library, fetch metadata and artwork in seconds, and play with style. 17 classic systems supported.">
     <meta property="og:image" content="https://neoarcadex.oldgamers.it/images/logo.png">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://neoarcadex.oldgamers.it/">
-    <meta name="twitter:title" content="NeoArcadeX - macOS Frontend for Retrogaming">
-    <meta name="twitter:description" content="The ultimate macOS game launcher for retro gaming. Organize your collection with style and support for multiple emulators.">
+    <meta name="twitter:title" content="NeoArcadeX — macOS Frontend for RetroArch">
+    <meta name="twitter:description" content="Native macOS frontend for RetroArch with fast ScreenScraper integration and 17 systems.">
     <meta name="twitter:image" content="https://neoarcadex.oldgamers.it/images/logo.png">
     
     <!-- Favicon -->
@@ -43,15 +43,10 @@
       "applicationCategory": "GameApplication",
       "offers": {
         "@type": "Offer",
-        "price": "0",
+        "price": "5",
         "priceCurrency": "EUR"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "150"
-      },
-      "description": "NeoArcadeX is a beautiful, powerful macOS game launcher and frontend for retro gaming emulation."
+      "description": "NeoArcadeX is a native macOS frontend for RetroArch with fast ScreenScraper integration, automatic artwork and metadata, and smart 7‑day trial. Supports 17 classic systems with optimal cores."
     }
     </script>
 </head>
@@ -63,7 +58,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/neoarcadex-logo.png" alt="NeoArcadeX Logo - Retro Gaming Frontend for macOS" class="logo-img" width="200" height="60">
+                <img src="images/neoarcadex-logo.png" alt="NeoArcadeX Logo - macOS Retro Frontend" class="logo-img" width="200" height="60">
             </a>
         </div>
         <nav class="navbar">
@@ -83,16 +78,18 @@
         </nav>
     </header>
 
-<!-- Hero Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="main-logo">
-        <img src="images/logo.png" alt="NeoArcadeX Main Logo" class="logo-img" width="300" height="300">
-    </div>
+            <img src="images/logo.png" alt="NeoArcadeX Main Logo" class="logo-img" width="300" height="300">
+        </div>
         <div class="hero-content" id="main-content">
-            <h1>Bring Retro Gaming to Life</h1>
-            <h2>Master Your Retro Library on macOS with Style</h2>
+            <h1>Bring Your Retro Library to Life</h1>
+            <h2>Fast metadata, beautiful covers, and one‑click launches with RetroArch</h2>
             <div class="cta-buttons">
-                <a href="http://neoarcadex.oldgamers.it/downloads/NeoArcadeX.dmg" class="btn-download btn-mac"><img src="images/logoapple.png" alt="Apple logo" class="apple-logo" width="32" height="32"> Download Now</a>
+                <a href="https://neoarcadex.oldgamers.it/downloads/NeoArcadeX.dmg" class="btn-download btn-mac">
+                    <img src="images/logoapple.png" alt="Apple logo" class="apple-logo" width="32" height="32"> Download for macOS
+                </a>
             </div>
         </div>
         <div class="hero-bg"></div>
@@ -100,195 +97,126 @@
 
     <!-- Features Section -->
     <section id="features" class="features">
-        <h2>Features We Know You'll Love</h2>
+        <h2>What Makes NeoArcadeX Different</h2>
         <div class="features-grid">
             <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path fill="#6f42c1" d="M48 16H16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V24c0-4.4-3.6-8-8-8z"/>
                     <circle fill="#00aaff" cx="20" cy="28" r="4"/>
                     <circle fill="#00aaff" cx="20" cy="36" r="4"/>
                     <path fill="#00aaff" d="M40 28h8v8h-8z"/>
-                    <circle fill="#fff" cx="44" cy="36" r="3"/>
-                    <rect fill="#4a4a4a" x="28" y="48" width="8" height="6" rx="1"/>
                 </svg>
-                <h3>A Game Launcher with Style</h3>
-                <p>NeoArcadeX, built for macOS, brings modern and retro game emulation with a sleek interface to make your games look stunning.</p>
+                <h3>Smart 7‑Day Trial</h3>
+                <p>Server‑verified trial with a secure Device ID in Keychain and a 24‑hour grace period for offline use. Clear banners show remaining days and actions.</p>
             </div>
             <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <rect fill="#6f42c1" x="8" y="8" width="16" height="16" rx="2"/>
                     <rect fill="#6f42c1" x="28" y="8" width="16" height="16" rx="2"/>
                     <rect fill="#00aaff" x="48" y="8" width="8" height="16" rx="2"/>
                     <rect fill="#00aaff" x="8" y="28" width="16" height="16" rx="2"/>
-                    <rect fill="#6f42c1" x="28" y="28" width="16" height="16" rx="2"/>
-                    <rect fill="#00aaff" x="48" y="28" width="8" height="16" rx="2"/>
-                    <rect fill="#00aaff" x="8" y="48" width="16" height="8" rx="2"/>
-                    <rect fill="#6f42c1" x="28" y="48" width="16" height="8" rx="2"/>
-                    <rect fill="#00aaff" x="48" y="48" width="8" height="8" rx="2"/>
                 </svg>
-                <h3>Organize Your Game Collection</h3>
-                <p>Not just pretty: add as much or as little information to your games as you like. NeoArcadeX maintains its own database for a massive number of games.</p>
+                <h3>Next‑Gen ScreenScraper Engine</h3>
+                <p>Category‑aware lookups with multi‑level caching. Covers, screenshots, videos, and metadata in 1–2 seconds with robust rate‑limit handling and retries.</p>
             </div>
             <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path fill="#ff1744" d="M32 12c-11 0-20 9-20 20 0 15 20 30 20 30s20-15 20-30c0-11-9-20-20-20z"/>
-                    <rect fill="#00aaff" x="26" y="24" width="4" height="12" rx="1"/>
-                    <rect fill="#00aaff" x="34" y="24" width="4" height="12" rx="1"/>
-                    <rect fill="#6f42c1" x="28" y="28" width="8" height="4" rx="1"/>
-                    <circle fill="#fff" cx="28" cy="20" r="2"/>
-                    <circle fill="#fff" cx="36" cy="20" r="2"/>
                 </svg>
-                <h3>We ♥ Emulation</h3>
-                <p>NeoArcadeX includes support for countless emulators. Go ahead, play your favorite game from 1985 onwards.</p>
+                <h3>17 Classic Systems</h3>
+                <p>From Neo Geo and Amiga to PlayStation and Dreamcast. Automatic console detection and optimal RetroArch cores — minimal setup, maximum play.</p>
             </div>
             <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <rect fill="#6f42c1" x="12" y="16" width="40" height="36" rx="2"/>
                     <rect fill="#1a252f" x="16" y="20" width="32" height="24"/>
-                    <rect fill="#00aaff" x="18" y="22" width="6" height="8" rx="1"/>
-                    <rect fill="#00aaff" x="26" y="22" width="6" height="8" rx="1"/>
-                    <rect fill="#00aaff" x="34" y="22" width="6" height="8" rx="1"/>
-                    <rect fill="#00aaff" x="42" y="22" width="6" height="8" rx="1"/>
-                    <rect fill="#6f42c1" x="18" y="32" width="6" height="8" rx="1"/>
-                    <rect fill="#6f42c1" x="26" y="32" width="6" height="8" rx="1"/>
-                    <rect fill="#6f42c1" x="34" y="32" width="6" height="8" rx="1"/>
-                    <rect fill="#fff" x="16" y="46" width="32" height="2"/>
                 </svg>
-                <h3>All Your Games, One Library</h3>
-                <p>Import your collection from various sources. No setup headaches—just pure gaming bliss.</p>
+                <h3>Dedicated Media Server</h3>
+                <p>Pre‑optimized covers, thumbnails, and gameplay videos from our server — no daily quotas and ready for full offline use after download.</p>
             </div>
             <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <rect fill="#6f42c1" x="8" y="12" width="48" height="36" rx="3"/>
-                    <rect fill="#1a252f" x="12" y="16" width="40" height="28"/>
-                    <path fill="#00aaff" d="M28 26l14 8-14 8V26z"/>
-                    <circle fill="#fff" cx="20" cy="52" r="3"/>
-                    <circle fill="#fff" cx="32" cy="52" r="3"/>
-                    <circle fill="#fff" cx="44" cy="52" r="3"/>
-                </svg>
-                <h3>Excellent How-To Video Tutorials</h3>
-                <p>Check out our upcoming YouTube channel for videos to help you get your games up and running (coming soon!).</p>
-            </div>
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <circle fill="#6f42c1" cx="32" cy="20" r="8"/>
-                    <circle fill="#00aaff" cx="18" cy="32" r="7"/>
-                    <circle fill="#00aaff" cx="46" cy="32" r="7"/>
                     <path fill="#6f42c1" d="M32 30c-8 0-14 4-14 10v8h28v-8c0-6-6-10-14-10z"/>
-                    <path fill="#00aaff" d="M18 40c-6 0-10 3-10 7v5h10v-8c0-1.5.3-2.8.8-4H18z"/>
-                    <path fill="#00aaff" d="M46 40c6 0 10 3 10 7v5H46v-8c0-1.5-.3-2.8-.8-4H46z"/>
                 </svg>
-                <h3>We Have a GREAT Community</h3>
-                <p>Join our forums and Discord for support from the gaming world's coolest people. Start there if you need help!</p>
+                <h3>SwiftUI Native Interface</h3>
+                <p>Modern UI built with SwiftUI and Swift Concurrency: adaptive grid, dark mode, context menus, and drag & drop — responsive and Mac‑native.</p>
+            </div>
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect fill="#00aaff" x="18" y="22" width="6" height="8" rx="1"/>
+                </svg>
+                <h3>Play Stats & Backups</h3>
+                <p>Track time played, last sessions, and launch counts. Export/Import your full library as JSON for manual backups and migration.</p>
             </div>
         </div>
     </section>
 
     <!-- Purchase Section -->
     <section id="purchase" class="purchase">
-        <h2>Everything You've Seen So Far is Free</h2>
-        <p>But NeoArcadeX Premium is available for only €5. Upgrading supports an independent developer and unlocks advanced features for the best macOS game launcher experience!</p>
+        <h2>Unlock NeoArcadeX Pro</h2>
+        <p>Try everything for 7 days. Then unlock a permanent license for just €5 (one‑time). No subscriptions. No invasive DRM.</p>
         
         <!-- Comparison Table -->
         <div class="comparison-table">
             <div class="comparison-column free-column">
-                <h3>Free Version</h3>
+                <h3>Trial (7 days)</h3>
                 <div class="price">€0</div>
                 <ul class="feature-list">
-                    <li class="included"><span class="check">✓</span> Game library management</li>
-                    <li class="included"><span class="check">✓</span> Emulator integration</li>
-                    <li class="included"><span class="check">✓</span> Automatic metadata download</li>
-                    <li class="included"><span class="check">✓</span> Basic artwork scraping</li>
-                    <li class="included"><span class="check">✓</span> Grid & list views</li>
-                    <li class="included"><span class="check">✓</span> Basic themes</li>
-                    <li class="excluded"><span class="cross">✗</span> Cloud backup</li>
-                    <li class="excluded"><span class="cross">✗</span> Premium themes</li>
-                    <li class="excluded"><span class="cross">✗</span> Advanced filters</li>
-                    <li class="excluded"><span class="cross">✗</span> Batch operations</li>
-                    <li class="excluded"><span class="cross">✗</span> Priority support</li>
+                    <li class="included"><span class="check">✓</span> Full functionality during trial</li>
+                    <li class="included"><span class="check">✓</span> Online verification with 24h offline grace</li>
+                    <li class="included"><span class="check">✓</span> Clear in‑app reminders before expiry</li>
+                    <li class="excluded"><span class="cross">✗</span> No usage beyond 7 days without activation</li>
                 </ul>
             </div>
             
             <div class="comparison-column premium-column">
-                <div class="popular-badge">Most Popular</div>
-                <h3>Premium Version</h3>
-                <div class="price">€5<span class="price-note">one-time</span></div>
+                <div class="popular-badge">Recommended</div>
+                <h3>Pro</h3>
+                <div class="price">€5<span class="price-note">one‑time</span></div>
                 <ul class="feature-list">
-                    <li class="included"><span class="check">✓</span> Game library management</li>
-                    <li class="included"><span class="check">✓</span> Emulator integration</li>
-                    <li class="included"><span class="check">✓</span> Automatic metadata download</li>
-                    <li class="included"><span class="check">✓</span> Enhanced artwork scraping</li>
-                    <li class="included"><span class="check">✓</span> Grid & list views</li>
-                    <li class="included"><span class="check">✓</span> All themes (basic + premium)</li>
-                    <li class="included"><span class="check">✓</span> Cloud backup</li>
-                    <li class="included"><span class="check">✓</span> Premium exclusive themes</li>
-                    <li class="included"><span class="check">✓</span> Advanced filters & sorting</li>
-                    <li class="included"><span class="check">✓</span> Batch operations</li>
-                    <li class="included"><span class="check">✓</span> Priority support</li>
+                    <li class="included"><span class="check">✓</span> Permanent activation via code</li>
+                    <li class="included"><span class="check">✓</span> Stored securely in Keychain</li>
+                    <li class="included"><span class="check">✓</span> Works fully offline after activation</li>
+                    <li class="included"><span class="check">✓</span> Future updates included</li>
                 </ul>
             </div>
         </div>
         
         <div class="cta-buttons">
-            <a href="https://www.paypal.com/paypalme/paologiulio" class="btn-contribute" target="_blank">Upgrade to Premium - €5</a>
+            <a href="https://www.paypal.com/paypalme/paologiulio" class="btn-contribute" target="_blank" rel="noopener">Buy Pro — €5</a>
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section id="newsletter" class="newsletter">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to our newsletter for updates, tips, and exclusive content about NeoArcadeX and retro gaming</p>
-        <form class="newsletter-form" aria-label="Newsletter signup form">
-            <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email address">
-            <button type="submit" class="btn-subscribe">Subscribe</button>
-        </form>
-        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
-    </section>
-
-    <!-- Social Proof Section -->
-    <section id="social-proof" class="social-proof">
-        <h2>Loved by the Retro Gaming Community</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">10,000+</div>
-                <div class="stat-label">Downloads</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">5,000+</div>
-                <div class="stat-label">Active Users</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">4.8/5</div>
-                <div class="stat-label">Average Rating</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">20+</div>
-                <div class="stat-label">Platforms Supported</div>
-            </div>
-        </div>
-        
-        <div class="testimonials">
-            <div class="testimonial-card">
-                <p class="testimonial-text">"NeoArcadeX has completely transformed how I manage my retro game collection. The interface is beautiful and it's incredibly easy to use!"</p>
-                <p class="testimonial-author">— Alex M., Mac Gamer</p>
-            </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Finally, a game launcher that looks as good as it works. The automatic metadata download saves so much time!"</p>
-                <p class="testimonial-author">— Sarah K., Retro Enthusiast</p>
-            </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Best €5 I've ever spent. The Premium features are totally worth it, and supporting the developer feels great!"</p>
-                <p class="testimonial-author">— Mike D., Premium User</p>
-            </div>
-        </div>
-    </section>
+    <!-- Highlights Section -->
+<section id="social-proof" class="social-proof">
+  <h2>Built for Performance and Simplicity</h2>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">SwiftUI</div>
+      <div class="stat-label">Native, responsive UI</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">Retro<wbr>Arch</div>
+      <div class="stat-label">Optimal cores auto‑selected</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">Screen<wbr>Scraper</div>
+      <div class="stat-label">Covers & metadata in seconds</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">Server</div>
+      <div class="stat-label">No quota, offline‑first media</div>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h4>NeoArcadeX</h4>
-                <p>The ultimate macOS frontend for retro gaming</p>
+                <p>Native macOS frontend for retro gaming with RetroArch and ScreenScraper</p>
             </div>
             
             <div class="footer-section">
@@ -312,9 +240,9 @@
             <div class="footer-section">
                 <h4>Community</h4>
                 <ul>
-                    <li><a href="#" target="_blank">Discord Server</a></li>
-                    <li><a href="#" target="_blank">Forums</a></li>
-                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Discord</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Forums</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
                 </ul>
             </div>
         </div>
@@ -332,27 +260,27 @@
             <div class="modal-body">
                 <p><strong>Last Updated:</strong> January 2025</p>
                 
-                <h3>Information We Collect</h3>
-                <p>NeoArcadeX respects your privacy. The application operates locally on your Mac and does not collect personal information without your consent. When you use optional features like cloud backup or newsletter signup, we may collect:</p>
+                <h3>What We Store</h3>
+                <p>NeoArcadeX primarily runs locally on your Mac. For trial/licensing and optional services, the following may be used:</p>
                 <ul>
-                    <li>Email address (for newsletter subscriptions)</li>
-                    <li>Usage statistics (anonymous, if opted in)</li>
-                    <li>Game library metadata (for cloud backup feature)</li>
+                    <li>Device ID generated and stored in Keychain (trial/license)</li>
+                    <li>Trial/license status (cached locally, periodically verified)</li>
+                    <li>ScreenScraper credentials (if you choose to enter them)</li>
+                    <li>Email address (newsletter opt‑in only)</li>
                 </ul>
                 
-                <h3>How We Use Information</h3>
-                <p>Any information collected is used solely to:</p>
+                <h3>How We Use It</h3>
                 <ul>
-                    <li>Provide the services you've requested</li>
-                    <li>Improve NeoArcadeX functionality</li>
-                    <li>Send you updates and newsletters (only if subscribed)</li>
+                    <li>Verify trial and Pro activation</li>
+                    <li>Fetch metadata and media (ScreenScraper and/or our media server)</li>
+                    <li>Optional email updates if subscribed</li>
                 </ul>
                 
-                <h3>Data Storage</h3>
-                <p>All game library data is stored locally on your Mac. Cloud backup data (Premium feature) is encrypted and stored securely. We do not sell or share your data with third parties.</p>
+                <h3>Storage</h3>
+                <p>Your library data stays on your Mac. Device ID and license status are stored in Keychain. We don’t sell or share your data. No telemetry is sent by default.</p>
                 
                 <h3>Contact</h3>
-                <p>For privacy concerns, please contact us through our support channels.</p>
+                <p>For privacy questions, please reach out via our official support channels.</p>
             </div>
         </div>
     </div>
@@ -365,28 +293,24 @@
             <div class="modal-body">
                 <p><strong>Last Updated:</strong> January 2025</p>
                 
-                <h3>Acceptance of Terms</h3>
-                <p>By downloading and using NeoArcadeX, you agree to these Terms of Service. If you do not agree, please do not use the application.</p>
-                
                 <h3>License</h3>
-                <p>NeoArcadeX grants you a non-exclusive, non-transferable license to use the software on macOS devices you own or control. The Premium upgrade is a one-time payment that unlocks additional features.</p>
+                <p>NeoArcadeX grants a license to use on macOS. The Pro version unlocks with a one‑time €5 payment and works offline after activation.</p>
                 
                 <h3>User Responsibilities</h3>
-                <p>You are responsible for:</p>
                 <ul>
-                    <li>Legally obtaining all ROM files and game content</li>
-                    <li>Ensuring you have the right to use emulated software</li>
-                    <li>Complying with copyright and intellectual property laws</li>
+                    <li>Legally obtaining ROM files</li>
+                    <li>Complying with copyright and IP laws</li>
+                    <li>Installing RetroArch and required cores</li>
                 </ul>
                 
                 <h3>Disclaimer</h3>
-                <p>NeoArcadeX is provided "as is" without warranty. We are not responsible for any issues arising from emulator use or ROM files. NeoArcadeX is a frontend application and does not include or distribute copyrighted game content.</p>
+                <p>NeoArcadeX is a frontend. It does not include ROMs or emulator cores. We are not responsible for issues caused by third‑party ROMs or emulators.</p>
                 
                 <h3>Refunds</h3>
-                <p>Due to the digital nature of the Premium upgrade, refunds are handled on a case-by-case basis. Please contact support if you experience issues.</p>
+                <p>Refund requests for Pro are considered case‑by‑case.</p>
                 
-                <h3>Changes to Terms</h3>
-                <p>We reserve the right to modify these terms. Continued use of NeoArcadeX after changes constitutes acceptance of new terms.</p>
+                <h3>Changes</h3>
+                <p>We may update these terms; continued use indicates acceptance.</p>
             </div>
         </div>
     </div>
