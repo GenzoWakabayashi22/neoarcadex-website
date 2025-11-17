@@ -168,3 +168,154 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 });
+// ============================================
+// REVIEWS CAROUSEL FUNCTIONALITY
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    const dotsContainer = document.querySelector('.carousel-dots');
+    const cards = document.querySelectorAll('.review-card');
+    
+    if (!track || !prevBtn || !nextBtn || !dotsContainer || cards.length === 0) {
+        return; // Exit if carousel elements don't exist
+    }
+    
+    let currentIndex = 0;
+    let cardsPerView = window.innerWidth > 768 ? 2 : 1;
+    const totalSlides = Math.ceil(cards.length / cardsPerView);
+    let autoScrollInterval;
+    
+    // Create dots
+    function createDots() {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('button');
+            dot.classList.add('carousel-dot');
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+    }
+    
+    // Update dots
+    function updateDots() {
+        const dots = document.querySelectorAll('.carousel-dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+    
+    // Go to specific slide
+    function goToSlide(index) {
+        if (index < 0) {
+            currentIndex = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentIndex = 0;
+        } else {
+            currentIndex = index;
+        }
+        
+        const cardWidth = cards[0].offsetWidth;
+        const gap = 32; // 2rem gap
+        const offset = -(currentIndex * cardsPerView * (cardWidth + gap));
+        track.style.transform = `translateX(${offset}px)`;
+        updateDots();
+    }
+    
+    // Next slide
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
+    
+    // Previous slide
+    function prevSlide() {
+        goToSlide(currentIndex - 1);
+    }
+    
+    // Auto scroll
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+    
+    function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopAutoScroll();
+        startAutoScroll();
+    });
+    
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopAutoScroll();
+        startAutoScroll();
+    });
+    
+    // Pause on hover
+    track.addEventListener('mouseenter', stopAutoScroll);
+    track.addEventListener('mouseleave', startAutoScroll);
+    
+    // Handle window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            const newCardsPerView = window.innerWidth > 768 ? 2 : 1;
+            if (newCardsPerView !== cardsPerView) {
+                cardsPerView = newCardsPerView;
+                currentIndex = 0;
+                createDots();
+                goToSlide(0);
+            }
+        }, 250);
+    });
+    
+    // Touch/swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoScroll();
+    });
+    
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoScroll();
+    });
+    
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        if (touchStartX - touchEndX > swipeThreshold) {
+            nextSlide();
+        } else if (touchEndX - touchStartX > swipeThreshold) {
+            prevSlide();
+        }
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+            stopAutoScroll();
+            startAutoScroll();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+            stopAutoScroll();
+            startAutoScroll();
+        }
+    });
+    
+    // Initialize
+    createDots();
+    goToSlide(0);
+    startAutoScroll();
+});
