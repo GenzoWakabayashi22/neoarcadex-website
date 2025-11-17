@@ -764,6 +764,202 @@ header {
     color: #00aaff;
     font-weight: bold;
 }
+/* Reviews Carousel Section */
+.reviews {
+    padding: 4rem 2rem;
+    background: #1a252f;
+    text-align: center;
+    overflow: hidden;
+}
+
+.reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.reviews-intro {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 2rem;
+}
+
+.review-card {
+    min-width: calc(50% - 1rem);
+    background: #0d1319;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #6f42c1;
+    box-shadow: 0 4px 15px rgba(111, 66, 193, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(111, 66, 193, 0.4);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.magazine-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.review-stars {
+    font-size: 1.2rem;
+    color: #ffd700;
+}
+
+.review-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.review-author {
+    font-size: 0.9rem;
+    color: #999;
+    text-align: right;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(111, 66, 193, 0.8);
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+    background: #6f42c1;
+    box-shadow: 0 4px 15px rgba(111, 66, 193, 0.5);
+    outline: 2px solid #00aaff;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot:hover,
+.carousel-dot:focus {
+    background: rgba(0, 170, 255, 0.6);
+    outline: 2px solid #00aaff;
+}
+
+.carousel-dot.active {
+    background: #00aaff;
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Responsive Reviews */
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 0 50px;
+    }
+    
+    .review-card {
+        min-width: 100%;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .magazine-name {
+        font-size: 1.1rem;
+    }
+    
+    .review-quote {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        padding: 0 40px;
+    }
+    
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .review-card {
+        padding: 1.5rem;
+    }
+}
 
 /* Footer */
 footer { 
