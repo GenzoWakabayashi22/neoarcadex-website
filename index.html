@@ -1,394 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeoArcadeX — macOS Frontend for RetroArch | Library, Metadata, 17 Systems</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="NeoArcadeX is a native macOS frontend for RetroArch with fast ScreenScraper integration, automatic artwork and metadata, and smart 7‑day trial. Supports 17 classic systems with optimal cores.">
-    <meta name="keywords" content="NeoArcadeX, macOS, RetroArch, retro gaming frontend, ScreenScraper, ROM manager, game launcher, metadata, artwork">
-    <link rel="canonical" href="https://neoarcadex.oldgamers.it/">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://neoarcadex.oldgamers.it/">
-    <meta property="og:title" content="NeoArcadeX — macOS Frontend for RetroArch">
-    <meta property="og:description" content="Native macOS frontend for RetroArch. Organize your ROM library, fetch metadata and artwork in seconds, and play with style. 17 classic systems supported.">
-    <meta property="og:image" content="https://neoarcadex.oldgamers.it/images/logo.png">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://neoarcadex.oldgamers.it/">
-    <meta name="twitter:title" content="NeoArcadeX — macOS Frontend for RetroArch">
-    <meta name="twitter:description" content="Native macOS frontend for RetroArch with fast ScreenScraper integration and 17 systems.">
-    <meta name="twitter:image" content="https://neoarcadex.oldgamers.it/images/logo.png">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="images/logo.png" as="image">
-    
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NeoArcadeX",
-      "operatingSystem": "macOS",
-      "applicationCategory": "GameApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "5",
-        "priceCurrency": "EUR"
-      },
-      "description": "NeoArcadeX is a native macOS frontend for RetroArch with fast ScreenScraper integration, automatic artwork and metadata, and smart 7‑day trial. Supports 17 classic systems with optimal cores."
-    }
-    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoArcadeX — Il frontend retro per Mac</title>
+<meta name="description" content="NeoArcadeX: frontend nativo per macOS che organizza la tua collezione retro e lancia i giochi con RetroArch. Native macOS retro frontend for RetroArch.">
+<meta property="og:title" content="NeoArcadeX — The retro frontend for Mac"><meta property="og:description" content="NeoArcadeX: frontend nativo per macOS che organizza la tua collezione retro e lancia i giochi con RetroArch. Native macOS retro frontend for RetroArch."><meta property="og:image" content="https://neoarcadex.com/img/shot-neogeo.jpg">
+<link rel="icon" href="img/cabinet.png">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Skip to content link for accessibility -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    
-    <!-- Header with Menu -->
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/neoarcadex-logo.png" alt="NeoArcadeX Logo - macOS Retro Frontend" class="logo-img" width="200" height="60">
-            </a>
-        </div>
-        <nav class="navbar">
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="requirements.html">Requirements</a></li>
-                <li><a href="changelog.html">Changelog</a></li>
-                <li><a href="guides.html">Guides</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-        </nav>
-    </header>
+<body data-title-it="NeoArcadeX — Il frontend retro per Mac" data-title-en="NeoArcadeX — The retro frontend for Mac">
+<header class="nav"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/cabinet.png" alt=""><span>Neo<b>ArcadeX</b></span></a>
+<nav class="links"><a href="index.html#story"><span data-l="it">La storia</span><span data-l="en">The story</span></a><a href="index.html#features"><span data-l="it">Funzioni</span><span data-l="en">Features</span></a><a href="index.html#systems"><span data-l="it">Sistemi</span><span data-l="en">Systems</span></a><a href="index.html#premium">Premium</a><a href="guide.html"><span data-l="it">Guida</span><span data-l="en">Guide</span></a></nav>
+<div class="lang" role="group" aria-label="Language"><button data-lang="it" aria-pressed="true">IT</button><button data-lang="en" aria-pressed="false">EN</button></div>
+</div></header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="main-logo">
-            <img src="images/logo.png" alt="NeoArcadeX Main Logo" class="logo-img" width="300" height="300">
-        </div>
-        <div class="hero-content" id="main-content">
-            <h1>Bring Your Retro Library to Life</h1>
-            <h2>Fast metadata, beautiful covers, and one‑click launches with RetroArch</h2>
-            <div class="cta-buttons">
-                <a href="https://neoarcadex.oldgamers.it/downloads/NeoArcadeX.dmg" class="btn-download btn-mac">
-                    <img src="images/logoapple.png" alt="Apple logo" class="apple-logo" width="32" height="32"> Download for macOS
-                </a>
-            </div>
-        </div>
-        <div class="hero-bg"></div>
-    </section>
+<div class="hero"><div class="wrap">
+ <div>
+  <img class="wordmark" src="img/wordmark.png" alt="NeoArcadeX">
+  <h1><span data-l="it">Il tuo <em>frontend retro</em>, finalmente a casa sul Mac.</span><span data-l="en">Your <em>retro frontend</em>, finally at home on the Mac.</span></h1>
+  <p class="lead" data-l="it">Sfoglia la tua collezione tra copertine, video e schede complete e lancia ogni gioco con RetroArch in un clic. Nato per macOS, per chi ha ancora i gettoni in tasca.</p>
+  <p class="lead" data-l="en">Browse your collection through covers, videos and complete game sheets and launch every game with RetroArch in one click. Built for macOS, for those who still have coins in their pocket.</p>
+  <div class="cta"><a class="btn primary" href="https://neoarcadex.oldgamers.it/downloads/NeoArcadeX.dmg">⬇ <span data-l="it">Scarica per macOS</span><span data-l="en">Download for macOS</span></a><a class="btn ghost" href="#premium"><span data-l="it">Scopri Premium</span><span data-l="en">Discover Premium</span></a></div>
+  <p class="meta"><span data-l="it">macOS 14 Sonoma o successivo · Apple Silicon e Intel · 5 lingue</span><span data-l="en">macOS 14 Sonoma or later · Apple Silicon and Intel · 5 languages</span></p>
+ </div>
+ <img class="shot" src="img/shot-neogeo.jpg" alt="NeoArcadeX">
+</div></div>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2>What Makes NeoArcadeX Different</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path fill="#6f42c1" d="M48 16H16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V24c0-4.4-3.6-8-8-8z"/>
-                    <circle fill="#00aaff" cx="20" cy="28" r="4"/>
-                    <circle fill="#00aaff" cx="20" cy="36" r="4"/>
-                    <path fill="#00aaff" d="M40 28h8v8h-8z"/>
-                </svg>
-                <h3>Smart 7‑Day Trial</h3>
-                <p>Server‑verified trial with a secure Device ID in Keychain and a 24‑hour grace period for offline use. Clear banners show remaining days and actions.</p>
-            </div>
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <rect fill="#6f42c1" x="8" y="8" width="16" height="16" rx="2"/>
-                    <rect fill="#6f42c1" x="28" y="8" width="16" height="16" rx="2"/>
-                    <rect fill="#00aaff" x="48" y="8" width="8" height="16" rx="2"/>
-                    <rect fill="#00aaff" x="8" y="28" width="16" height="16" rx="2"/>
-                </svg>
-                <h3>Next‑Gen ScreenScraper Engine</h3>
-                <p>Category‑aware lookups with multi‑level caching. Covers, screenshots, videos, and metadata in 1–2 seconds with robust rate‑limit handling and retries.</p>
-            </div>
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path fill="#ff1744" d="M32 12c-11 0-20 9-20 20 0 15 20 30 20 30s20-15 20-30c0-11-9-20-20-20z"/>
-                </svg>
-                <h3>17 Classic Systems</h3>
-                <p>From Neo Geo and Amiga to PlayStation and Dreamcast. Automatic console detection and optimal RetroArch cores — minimal setup, maximum play.</p>
-            </div>
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <rect fill="#6f42c1" x="12" y="16" width="40" height="36" rx="2"/>
-                    <rect fill="#1a252f" x="16" y="20" width="32" height="24"/>
-                </svg>
-                <h3>Dedicated Media Server</h3>
-                <p>Pre‑optimized covers, thumbnails, and gameplay videos from our server — no daily quotas and ready for full offline use after download.</p>
-            </div>
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle fill="#6f42c1" cx="32" cy="20" r="8"/>
-                    <path fill="#6f42c1" d="M32 30c-8 0-14 4-14 10v8h28v-8c0-6-6-10-14-10z"/>
-                </svg>
-                <h3>SwiftUI Native Interface</h3>
-                <p>Modern UI built with SwiftUI and Swift Concurrency: adaptive grid, dark mode, context menus, and drag & drop — responsive and Mac‑native.</p>
-            </div>
-            <div class="feature-card">
-                <svg class="feature-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <rect fill="#00aaff" x="18" y="22" width="6" height="8" rx="1"/>
-                </svg>
-                <h3>Play Stats & Backups</h3>
-                <p>Track time played, last sessions, and launch counts. Export/Import your full library as JSON for manual backups and migration.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Reviews Carousel Section -->
-    <section id="reviews" class="reviews">
-        <h2>What Gaming Media Says</h2>
-        <p class="reviews-intro">Leading publications praise NeoArcadeX as the definitive Mac arcade frontend</p>
-        
-        <div class="carousel-container">
-            <button class="carousel-btn carousel-prev" aria-label="Previous reviews">‹</button>
-            
-            <div class="carousel-wrapper">
-                <div class="carousel-track">
-                    <!-- Review 1 -->
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="magazine-name">Mac Arcade Monthly</div>
-                            <div class="review-stars">★★★★★</div>
-                        </div>
-                        <p class="review-quote">"NeoArcadeX fills a void in the Mac gaming landscape. The frontend we've all been waiting for."</p>
-                        <p class="review-author">— David Mitchell, Senior Editor</p>
-                    </div>
-                    
-                    <!-- Review 2 -->
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="magazine-name">RetroTech Review</div>
-                            <div class="review-stars">★★★★★</div>
-                        </div>
-                        <p class="review-quote">"Beautifully designed, incredibly functional. This is exactly what the Mac arcade scene needed."</p>
-                        <p class="review-author">— Sarah Chen</p>
-                    </div>
-                    
-                    <!-- Review 3 -->
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="magazine-name">Apple Gaming Digest</div>
-                            <div class="review-stars">★★★★½</div>
-                        </div>
-                        <p class="review-quote">"Seamless integration with macOS and an intuitive interface. A game-changer for arcade enthusiasts."</p>
-                        <p class="review-author">— James Foster</p>
-                    </div>
-                    
-                    <!-- Review 4 -->
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="magazine-name">Classic Gaming Weekly</div>
-                            <div class="review-stars">★★★★★</div>
-                        </div>
-                        <p class="review-quote">"NeoArcadeX sets a new standard for arcade frontends on Mac. Simply outstanding."</p>
-                        <p class="review-author">— Emma Rodriguez</p>
-                    </div>
-                    
-                    <!-- Review 5 -->
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="magazine-name">MacRetro Insider</div>
-                            <div class="review-stars">★★★★★</div>
-                        </div>
-                        <p class="review-quote">"The missing piece of the puzzle. NeoArcadeX delivers everything Mac gamers have been asking for."</p>
-                        <p class="review-author">— Thomas Berg</p>
-                    </div>
-                    
-                    <!-- Review 6 -->
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="magazine-name">Vintage Mac Gaming</div>
-                            <div class="review-stars">★★★★★</div>
-                        </div>
-                        <p class="review-quote">"A masterpiece of design and functionality. NeoArcadeX raises the bar for retro gaming on macOS."</p>
-                        <p class="review-author">— Lisa Anderson</p>
-                    </div>
-                </div>
-            </div>
-            
-            <button class="carousel-btn carousel-next" aria-label="Next reviews">›</button>
-        </div>
-        
-        <div class="carousel-dots"></div>
-    </section>
-    <!-- Purchase Section -->
-    <section id="purchase" class="purchase">
-        <h2>Unlock NeoArcadeX Pro</h2>
-        <p>Try everything for 7 days. Then unlock a permanent license for just €5 (one‑time). No subscriptions. No invasive DRM.</p>
-        
-        <!-- Comparison Table -->
-        <div class="comparison-table">
-            <div class="comparison-column free-column">
-                <h3>Trial (7 days)</h3>
-                <div class="price">€0</div>
-                <ul class="feature-list">
-                    <li class="included"><span class="check">✓</span> Full functionality during trial</li>
-                    <li class="included"><span class="check">✓</span> Online verification with 24h offline grace</li>
-                    <li class="included"><span class="check">✓</span> Clear in‑app reminders before expiry</li>
-                    <li class="excluded"><span class="cross">✗</span> No usage beyond 7 days without activation</li>
-                </ul>
-            </div>
-            
-            <div class="comparison-column premium-column">
-                <div class="popular-badge">Recommended</div>
-                <h3>Pro</h3>
-                <div class="price">€5<span class="price-note">one‑time</span></div>
-                <ul class="feature-list">
-                    <li class="included"><span class="check">✓</span> Permanent activation via code</li>
-                    <li class="included"><span class="check">✓</span> Stored securely in Keychain</li>
-                    <li class="included"><span class="check">✓</span> Works fully offline after activation</li>
-                    <li class="included"><span class="check">✓</span> Future updates included</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="cta-buttons">
-            <a href="https://www.paypal.com/paypalme/paologiulio" class="btn-contribute" target="_blank" rel="noopener">Buy Pro — €5</a>
-        </div>
-    </section>
+<section id="story"><div class="wrap story">
+ <div class="eyebrow"><span data-l="it">Perché esiste</span><span data-l="en">Why it exists</span></div>
+ <h2><span data-l="it">Una lettera d'amore</span><span data-l="en">A love letter</span></h2>
+ <p class="epi" data-l="it">«Una lettera d'amore di un ragazzo quasi cinquantenne al sé sedicenne.»</p>
+ <p class="epi" data-l="en">“A love letter from a nearly fifty-year-old man to his sixteen-year-old self.”</p>
+ <p class="blk" data-l="it"><span class="emo">🕹️</span>Quest'app nasce da una scintilla —
+il tintinnio delle monete in tasca,
+il bagliore di un CRT che brucia attraverso il fumo,
+la musica troppo alta,
+il mondo fuori troppo lontano.</p>
+ <p class="blk" data-l="en"><span class="emo">🕹️</span>This app was born from a spark —
+the clinking of coins in the pocket,
+the glow of a CRT burning through the smoke,
+the music too loud,
+the world outside too far away.</p>
+ <p class="blk" data-l="it"><span class="emo">👾</span>A fine anni '80 e inizio '90,
+ogni giocatore sognava di portare quell'universo a casa.
+Il Neo Geo ci è riuscito — audace, impossibile, bellissimo.
+Era la magia della sala giochi intrappolata in una scatola nera.</p>
+ <p class="blk" data-l="en"><span class="emo">👾</span>In the late '80s and early '90s,
+every player dreamed of bringing that universe home.
+The Neo Geo did it — bold, impossible, beautiful.
+It was arcade magic trapped in a black box.</p>
+ <p class="blk" data-l="it"><span class="emo">🔥</span>NeoArcadeX è il mio modo di dire grazie —
+a quel ragazzo davanti a un cabinato,
+occhi spalancati, cuore a mille,
+pensando: «Un giorno… lo avrò a casa.»</p>
+ <p class="blk" data-l="en"><span class="emo">🔥</span>NeoArcadeX is my way of saying thank you —
+to that kid in front of a cabinet,
+eyes wide, heart racing,
+thinking: “One day… I'll have it at home.”</p>
+ <div class="author"><img src="img/paolo.jpg" alt="Paolo Giulio" onerror="this.closest('.author').classList.add('nophoto')">
+  <div><b>Paolo Giulio</b><p data-l="it">Appassionato di retrogaming e sviluppatore, dedicato a preservare le esperienze di gioco classiche. Realizzato con ❤️ per gli appassionati di gaming retro.</p><p data-l="en">Retro gaming enthusiast and developer, dedicated to preserving classic gaming experiences. Made with ❤️ for retro gaming enthusiasts.</p></div></div>
+</div></section>
 
-    <!-- Highlights Section -->
-<section id="social-proof" class="social-proof">
-  <h2>Built for Performance and Simplicity</h2>
-  <div class="stats-grid">
-    <div class="stat-card">
-      <div class="stat-number">SwiftUI</div>
-      <div class="stat-label">Native, responsive UI</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">Retro<wbr>Arch</div>
-      <div class="stat-label">Optimal cores auto‑selected</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">Screen<wbr>Scraper</div>
-      <div class="stat-label">Covers & metadata in seconds</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">Server</div>
-      <div class="stat-label">No quota, offline‑first media</div>
-    </div>
-  </div>
-</section>
+<section id="features" class="alt"><div class="wrap">
+ <div class="eyebrow"><span data-l="it">Funzioni</span><span data-l="en">Features</span></div>
+ <h2><span data-l="it">Tutto quello che serve a una collezione</span><span data-l="en">Everything a collection needs</span></h2>
+ <p class="sub" data-l="it">Progettato per Mac, con SwiftUI: veloce, in tema chiaro e scuro, pronto per la tua libreria.</p>
+ <p class="sub" data-l="en">Designed for the Mac with SwiftUI: fast, with light and dark themes, ready for your library.</p>
+ <div class="grid"><div class="card"><div class="ico">📚</div><h3><span data-l="it">Tutta la collezione, in ordine</span><span data-l="en">Your whole collection, in order</span></h3><p data-l="it">Scansiona la cartella delle ROM: NeoArcadeX riconosce da solo il sistema di ogni gioco e costruisce la libreria.</p><p data-l="en">Scan your ROM folder: NeoArcadeX recognises each game's system on its own and builds your library.</p></div><div class="card"><div class="ico">🕹️</div><h3><span data-l="it">Un clic e si gioca</span><span data-l="en">One click and you're playing</span></h3><p data-l="it">RetroArch e i core vengono installati per te, con importazione guidata dei BIOS. Il joypad è pronto: premi un tasto e inizia.</p><p data-l="en">RetroArch and cores are installed for you, with guided BIOS import. Your gamepad is ready: press a button and go.</p></div><div class="card"><div class="ico">🖼️</div><h3><span data-l="it">Copertine, miniature e video</span><span data-l="en">Covers, thumbnails and videos</span></h3><p data-l="it">Usa tutto ciò che metti nelle cartelle Covers, Thumbs e Videos. Con Premium scarica tutto in automatico da ScreenScraper, con il tuo account.</p><p data-l="en">Uses everything you put in the Covers, Thumbs and Videos folders. With Premium it downloads it all automatically from ScreenScraper, with your own account.</p></div><div class="card"><div class="ico">📋</div><h3><span data-l="it">Schede complete</span><span data-l="en">Complete game sheets</span> <span class="tag">PREMIUM</span></h3><p data-l="it">Anno, sviluppatore, genere, origine, data di uscita, voto e punteggio della stampa, badge e manuali dei giochi.</p><p data-l="en">Year, developer, genre, origin, release date, rating and press score, badges and game manuals.</p></div><div class="card"><div class="ico">⭐</div><h3><span data-l="it">Preferiti e giocati di recente</span><span data-l="en">Favourites and recently played</span> <span class="tag">PREMIUM</span></h3><p data-l="it">Le tue liste speciali in cima alla barra delle console, più statistiche per gioco: tempo totale, medio, ultima apertura.</p><p data-l="en">Your special lists at the top of the console bar, plus per-game stats: total and average play time, last opened.</p></div><div class="card"><div class="ico">✨</div><h3><span data-l="it">Ricerca con intelligenza artificiale</span><span data-l="en">AI-powered search</span> <span class="tag">PREMIUM</span></h3><p data-l="it">Descrivi un gioco e trovalo nella tua libreria con Gemini, usando la tua chiave API. Più arricchimento dei dati da Wikidata.</p><p data-l="en">Describe a game and find it in your library with Gemini, using your own API key. Plus data enrichment from Wikidata.</p></div><div class="card"><div class="ico">☁️</div><h3><span data-l="it">Backup e iCloud</span><span data-l="en">Backup and iCloud</span></h3><p data-l="it">Esporta e importa la libreria, con copie di sicurezza automatiche. Salvataggi, stati e BIOS possono sincronizzarsi via iCloud Drive.</p><p data-l="en">Export and import your library, with automatic safety copies. Saves, states and BIOS can sync through iCloud Drive.</p></div><div class="card"><div class="ico">🔒</div><h3><span data-l="it">Nessun tracciamento</span><span data-l="en">No tracking</span></h3><p data-l="it">Nessuna analitica, nessun profilo, nessun server nostro: la tua libreria resta sul tuo Mac.</p><p data-l="en">No analytics, no profiling, no servers of our own: your library stays on your Mac.</p></div></div>
+</div></section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>NeoArcadeX</h4>
-                <p>Native macOS frontend for retro gaming with RetroArch and ScreenScraper</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="guides.html">Guides</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Community</h4>
-                <ul>
-                    <li><a href="#" target="_blank" rel="noopener">Discord</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 NeoArcadeX. All rights reserved.</p>
-        </div>
-    </footer>
+<section id="gallery"><div class="wrap">
+ <div class="eyebrow"><span data-l="it">Dentro l'app</span><span data-l="en">Inside the app</span></div>
+ <h2><span data-l="it">Sfoglia, scegli, gioca</span><span data-l="en">Browse, pick, play</span></h2>
+ <div class="gallery"><figure><img src="img/shot-neogeo.jpg" alt="Neo Geo" loading="lazy"><figcaption>Neo Geo</figcaption></figure><figure><img src="img/shot-arcade.jpg" alt="Arcade" loading="lazy"><figcaption>Arcade</figcaption></figure><figure><img src="img/shot-neogeocd.jpg" alt="Neo Geo CD" loading="lazy"><figcaption>Neo Geo CD</figcaption></figure><figure><img src="img/shot-amiga.jpg" alt="Amiga" loading="lazy"><figcaption>Amiga</figcaption></figure><figure><img src="img/shot-megadrive.jpg" alt="Sega Mega Drive" loading="lazy"><figcaption>Sega Mega Drive</figcaption></figure><figure><img src="img/shot-snes.jpg" alt="Super Nintendo" loading="lazy"><figcaption>Super Nintendo</figcaption></figure></div>
+</div></section>
 
-    <!-- Privacy Policy Modal -->
-    <div id="privacy" class="modal" role="dialog" aria-labelledby="privacy-title" aria-hidden="true">
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close privacy policy">&times;</button>
-            <h2 id="privacy-title">Privacy Policy</h2>
-            <div class="modal-body">
-                <p><strong>Last Updated:</strong> January 2025</p>
-                
-                <h3>What We Store</h3>
-                <p>NeoArcadeX primarily runs locally on your Mac. For trial/licensing and optional services, the following may be used:</p>
-                <ul>
-                    <li>Device ID generated and stored in Keychain (trial/license)</li>
-                    <li>Trial/license status (cached locally, periodically verified)</li>
-                    <li>ScreenScraper credentials (if you choose to enter them)</li>
-                    <li>Email address (newsletter opt‑in only)</li>
-                </ul>
-                
-                <h3>How We Use It</h3>
-                <ul>
-                    <li>Verify trial and Pro activation</li>
-                    <li>Fetch metadata and media (ScreenScraper and/or our media server)</li>
-                    <li>Optional email updates if subscribed</li>
-                </ul>
-                
-                <h3>Storage</h3>
-                <p>Your library data stays on your Mac. Device ID and license status are stored in Keychain. We don’t sell or share your data. No telemetry is sent by default.</p>
-                
-                <h3>Contact</h3>
-                <p>For privacy questions, please reach out via our official support channels.</p>
-            </div>
-        </div>
-    </div>
+<section id="systems" class="alt"><div class="wrap">
+ <div class="eyebrow"><span data-l="it">Sistemi supportati</span><span data-l="en">Supported systems</span></div>
+ <h2><span data-l="it">Oltre 25 sistemi, dall'arcade ai portatili</span><span data-l="en">25+ systems, from arcade to handhelds</span></h2>
+ <p class="sub" data-l="it">Riconoscimento automatico dalla struttura delle cartelle e core RetroArch scelto per ogni sistema.</p>
+ <p class="sub" data-l="en">Automatic detection from your folder structure and the right RetroArch core for each system.</p>
+ <div class="chips"><span>Neo Geo</span><span>Neo Geo CD</span><span>Arcade (MAME/FBNeo)</span><span>Naomi</span><span>Naomi 2</span><span>Amiga</span><span>Amiga CD32</span><span>PlayStation</span><span>PlayStation Portable</span><span>Sega Saturn</span><span>Dreamcast</span><span>Mega Drive</span><span>Sega CD</span><span>Sega 32X</span><span>Master System</span><span>SNES</span><span>NES</span><span>Famicom</span><span>Nintendo 64</span><span>GameCube</span><span>Nintendo 3DS</span><span>Game Boy</span><span>Game Boy Color</span><span>Game Boy Advance</span><span>PC Engine</span><span>PC Engine CD</span><span>3DO</span><span>Atari Jaguar</span><span>OpenBOR</span></div>
+</div></section>
 
-    <!-- Terms of Service Modal -->
-    <div id="terms" class="modal" role="dialog" aria-labelledby="terms-title" aria-hidden="true">
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close terms of service">&times;</button>
-            <h2 id="terms-title">Terms of Service</h2>
-            <div class="modal-body">
-                <p><strong>Last Updated:</strong> January 2025</p>
-                
-                <h3>License</h3>
-                <p>NeoArcadeX grants a license to use on macOS. The Pro version unlocks with a one‑time €5 payment and works offline after activation.</p>
-                
-                <h3>User Responsibilities</h3>
-                <ul>
-                    <li>Legally obtaining ROM files</li>
-                    <li>Complying with copyright and IP laws</li>
-                    <li>Installing RetroArch and required cores</li>
-                </ul>
-                
-                <h3>Disclaimer</h3>
-                <p>NeoArcadeX is a frontend. It does not include ROMs or emulator cores. We are not responsible for issues caused by third‑party ROMs or emulators.</p>
-                
-                <h3>Refunds</h3>
-                <p>Refund requests for Pro are considered case‑by‑case.</p>
-                
-                <h3>Changes</h3>
-                <p>We may update these terms; continued use indicates acceptance.</p>
-            </div>
-        </div>
-    </div>
+<section id="premium"><div class="wrap">
+ <div class="eyebrow">Premium</div>
+ <h2><span data-l="it">Un solo acquisto. Nessun abbonamento.</span><span data-l="en">One purchase. No subscription.</span></h2>
+ <p class="sub" data-l="it">La tua libreria non è mai bloccata. Premium aggiunge gli strumenti per arricchirla e conoscerla.</p>
+ <p class="sub" data-l="en">Your library is never locked. Premium adds the tools to enrich it and get to know it.</p>
+ <div class="plans">
+  <div class="plan"><h3><span data-l="it">Gratis, sempre</span><span data-l="en">Free, always</span></h3><div class="price">€0</div>
+   <ul class="checks">
+    <li><span data-l="it">Libreria e scansione ROM</span><span data-l="en">Library and ROM scanning</span></li>
+    <li><span data-l="it">Tutti i sistemi, riconoscimento automatico</span><span data-l="en">All systems, automatic detection</span></li>
+    <li><span data-l="it">Lancio dei giochi con RetroArch</span><span data-l="en">Launch games with RetroArch</span></li>
+    <li><span data-l="it">Copertine, miniature e video locali</span><span data-l="en">Local covers, thumbnails and videos</span></li>
+    <li><span data-l="it">Schede e badge completi per i primi 15 giochi</span><span data-l="en">Full sheets and badges for the first 15 games</span></li>
+    <li><span data-l="it">Backup, import/export e salvataggi su iCloud</span><span data-l="en">Backup, import/export and iCloud saves</span></li>
+    <li><span data-l="it">5 lingue</span><span data-l="en">5 languages</span></li></ul></div>
+  <div class="plan pro"><h3>NeoArcadeX Premium</h3><div class="price">€7,99 <small><span data-l="it">una tantum</span><span data-l="en">one-time</span></small></div>
+   <ul class="checks">
+    <li><span data-l="it">Download automatico di copertine, miniature, video e manuali</span><span data-l="en">Automatic download of covers, thumbnails, videos and manuals</span></li>
+    <li><span data-l="it">Schede complete e badge su tutta la libreria</span><span data-l="en">Complete sheets and badges for the whole library</span></li>
+    <li><span data-l="it">Preferiti, giocati di recente e statistiche per gioco</span><span data-l="en">Favourites, recently played and per-game statistics</span></li>
+    <li><span data-l="it">Ricerca e metadati con AI (tua chiave Gemini)</span><span data-l="en">AI search and metadata (your own Gemini key)</span></li>
+    <li><span data-l="it">Arricchimento da Wikidata</span><span data-l="en">Wikidata enrichment</span></li>
+    <li><span data-l="it">Strumenti di diagnostica: BIOS, RetroArch, overlay</span><span data-l="en">Diagnostics tools: BIOS, RetroArch, overlays</span></li></ul>
+   <a class="btn primary" href="https://www.paypal.com/paypalme/paologiulio/7.99EUR"><span data-l="it">Acquista su PayPal · €7,99</span><span data-l="en">Buy on PayPal · €7.99</span></a>
+   <p class="note" data-l="it">Dopo il pagamento ricevi via email il file di licenza: trascinalo nell'app. È verificato in locale, senza account e senza connessione.</p>
+   <p class="note" data-l="en">After payment you receive a licence file by email: drag it into the app. It is verified locally, with no account and no connection.</p></div>
+ </div>
+</div></section>
 
-    <script src="script.js"></script>
+<section class="alt"><div class="wrap">
+ <div class="eyebrow"><span data-l="it">Lingue</span><span data-l="en">Languages</span></div>
+ <h2><span data-l="it">Questo sito è in italiano e inglese. L'app parla molte più lingue.</span><span data-l="en">This site is in Italian and English. The app speaks many more languages.</span></h2>
+ <p class="sub" data-l="it">Interfaccia, guide e schermate di licenza sono tradotte in 5 lingue, e puoi cambiarla in qualsiasi momento dalle impostazioni.</p>
+ <p class="sub" data-l="en">Interface, guides and licence screens are translated into 5 languages, and you can switch at any time in Settings.</p>
+ <div class="langs"><span>🇬🇧 English</span><span>🇮🇹 Italiano</span><span>🇪🇸 Español</span><span>🇫🇷 Français</span><span>🇩🇪 Deutsch</span></div>
+</div></section>
+
+<section id="faq"><div class="wrap" style="max-width:860px">
+ <div class="eyebrow">FAQ</div><h2><span data-l="it">Domande frequenti</span><span data-l="en">Frequently asked questions</span></h2>
+ <details><summary><span data-l="it">Cos'è NeoArcadeX?</span><span data-l="en">What is NeoArcadeX?</span></summary><p data-l="it">NeoArcadeX è un frontend nativo per macOS (SwiftUI) che organizza la tua collezione di giochi retro e li lancia con RetroArch.</p><p data-l="en">NeoArcadeX is a native macOS (SwiftUI) frontend that organises your retro game collection and launches games through RetroArch.</p></details><details><summary><span data-l="it">Quali sono i requisiti?</span><span data-l="en">What are the requirements?</span></summary><p data-l="it">macOS 14 Sonoma o successivo, Apple Silicon o Intel. Consigliati 8 GB di RAM (16 GB per librerie molto grandi) e circa 500 MB per l'app, più lo spazio per ROM e immagini.</p><p data-l="en">macOS 14 Sonoma or later, Apple Silicon or Intel. 8 GB of RAM recommended (16 GB for very large libraries) and about 500 MB for the app, plus space for ROMs and artwork.</p></details><details><summary><span data-l="it">Servono ROM e BIOS? Li fornite voi?</span><span data-l="en">Do I need ROMs and BIOS files? Do you provide them?</span></summary><p data-l="it">No, NeoArcadeX non include, ospita né scarica ROM, BIOS, chiavi o firmware. Devi usare i tuoi file, e sei responsabile di ciò che importi. L'app ti guida nell'importazione dei BIOS.</p><p data-l="en">No. NeoArcadeX does not include, host or download ROMs, BIOS files, keys or firmware. You use your own files and you are responsible for what you import. The app guides you through BIOS import.</p></details><details><summary><span data-l="it">Devo installare RetroArch?</span><span data-l="en">Do I need to install RetroArch?</span></summary><p data-l="it">RetroArch è il motore di emulazione. NeoArcadeX lo installa e installa i core necessari per te, scaricandoli da libretro.com quando lo richiedi.</p><p data-l="en">RetroArch is the emulation engine. NeoArcadeX installs it and the cores you need for you, downloading them from libretro.com when you ask.</p></details><details><summary><span data-l="it">Cosa è gratis e cosa richiede Premium?</span><span data-l="en">What is free and what needs Premium?</span></summary><p data-l="it">Libreria, scansione, riconoscimento dei sistemi, lancio dei giochi, media locali, backup e iCloud sono sempre gratis, e non bloccano mai la libreria. Premium sblocca download automatico dei media, schede complete, badge, manuali, preferiti, statistiche, ricerca AI e diagnostica. I primi 15 giochi hanno schede e badge completi come anteprima.</p><p data-l="en">Library, scanning, system detection, launching games, local media, backup and iCloud are always free and never lock your library. Premium unlocks automatic media download, complete sheets, badges, manuals, favourites, statistics, AI search and diagnostics. The first 15 games get full sheets and badges as a preview.</p></details><details><summary><span data-l="it">Come funziona la licenza Premium?</span><span data-l="en">How does the Premium licence work?</span></summary><p data-l="it">Paghi una volta sola su PayPal e ricevi via email un file di licenza: lo trascini nell'app. È un file salvato sul tuo Mac e verificato in locale, senza account e senza connessione. Niente abbonamenti.</p><p data-l="en">You pay once on PayPal and receive a licence file by email: drag it into the app. It is a file stored on your Mac and verified locally, with no account and no connection needed. No subscriptions.</p></details><details><summary><span data-l="it">Serve un account ScreenScraper?</span><span data-l="en">Do I need a ScreenScraper account?</span></summary><p data-l="it">Solo se vuoi il download automatico di copertine, video e descrizioni (funzione Premium): l'app usa il tuo account personale di ScreenScraper.fr. Senza, puoi usare i tuoi file locali.</p><p data-l="en">Only if you want automatic download of covers, videos and descriptions (a Premium feature): the app uses your own ScreenScraper.fr account. Without it, you can use your local files.</p></details><details><summary><span data-l="it">L'app invia dati su di me?</span><span data-l="en">Does the app send data about me?</span></summary><p data-l="it">No. Nessuna analitica, tracciamento o profilazione, e NeoArcadeX non ha server propri. Contatta servizi esterni solo quando usi la funzione corrispondente. Dettagli nella pagina Privacy.</p><p data-l="en">No. No analytics, tracking or profiling, and NeoArcadeX has no servers of its own. It contacts external services only when you use the matching feature. Details on the Privacy page.</p></details>
+</div></section>
+
+<section class="alt" style="text-align:center"><div class="wrap">
+ <img src="img/cabinet.png" alt="" style="width:120px;margin:0 auto 12px">
+ <h2><span data-l="it">Pronto a riaccendere il cabinato?</span><span data-l="en">Ready to power up the cabinet?</span></h2>
+ <div class="cta" style="justify-content:center"><a class="btn primary" href="https://neoarcadex.oldgamers.it/downloads/NeoArcadeX.dmg">⬇ <span data-l="it">Scarica per macOS</span><span data-l="en">Download for macOS</span></a><a class="btn ghost" href="guide.html"><span data-l="it">Leggi la guida</span><span data-l="en">Read the guide</span></a></div>
+ <p class="meta"><span data-l="it">Gratis da provare, per sempre. Premium è facoltativo.</span><span data-l="en">Free to try, forever. Premium is optional.</span></p>
+</div></section>
+
+<footer><div class="wrap">
+<div class="row"><div>© 2026 Paolo Giulio · NeoArcadeX</div><nav><a href="guide.html"><span data-l="it">Guida</span><span data-l="en">Guide</span></a><a href="privacy.html">Privacy</a><a href="mailto:paologiuliogazzano@gmail.com"><span data-l="it">Contatti</span><span data-l="en">Contact</span></a></nav></div>
+<p><span data-l="it">NeoArcadeX è un frontend indipendente: non include ROM, file BIOS o altri contenuti protetti da copyright, e l'utente è responsabile dei file che importa. Neo Geo e SNK sono marchi registrati di SNK Corporation; questa applicazione non è affiliata né approvata da SNK Corporation. RetroArch, ScreenScraper e gli altri nomi citati appartengono ai rispettivi proprietari.</span><span data-l="en">NeoArcadeX is an independent frontend: it does not include ROMs, BIOS files or other copyrighted content, and users are responsible for the files they import. Neo Geo and SNK are registered trademarks of SNK Corporation; this app is not affiliated with or endorsed by SNK Corporation. RetroArch, ScreenScraper and the other names mentioned belong to their respective owners.</span></p>
+</div></footer>
+<script src="script.js"></script>
 </body>
 </html>
