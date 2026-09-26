@@ -1,11 +1,11 @@
 {
-  "version": "3.4",
+  "version": "3.5",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "Premium con licenza a chiave e avviso di aggiornamento.",
-    "en": "Premium with licence key and update notification.",
-    "es": "Premium con clave de licencia y aviso de actualización.",
-    "fr": "Premium avec clé de licence et avis de mise à jour.",
-    "de": "Premium mit Lizenzschlüssel und Update-Hinweis."
+    "it": "Corretto il layout su schermi piccoli: la finestra non viene più tagliata.",
+    "en": "Fixed the layout on small screens: the window is no longer clipped.",
+    "es": "Corregido el diseño en pantallas pequeñas: la ventana ya no se recorta.",
+    "fr": "Mise en page corrigée sur petits écrans : la fenêtre n'est plus coupée.",
+    "de": "Layout auf kleinen Bildschirmen korrigiert: Das Fenster wird nicht mehr abgeschnitten."
   }
 }
