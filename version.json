@@ -1,11 +1,11 @@
 {
-  "version": "3.9",
+  "version": "3.10",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "Prezzo Premium aggiornato a 9,99 € (IVA inclusa in Italia).",
-    "en": "Premium price updated to €9.99 (VAT included in Italy).",
-    "es": "Precio de Premium actualizado a 9,99 € (IVA incluido en Italia).",
-    "fr": "Prix de Premium mis à jour à 9,99 € (TVA incluse en Italie).",
-    "de": "Premium-Preis auf 9,99 € aktualisiert (in Italien inkl. MwSt.)."
+    "it": "Il link per offrirmi un caffè ora è a offerta libera: scegli tu quanto.",
+    "en": "The buy-me-a-coffee link is now pay-what-you-want: you choose the amount.",
+    "es": "El enlace para invitarme a un café ahora es de aportación libre: tú eliges la cantidad.",
+    "fr": "Le lien pour m'offrir un café est désormais à montant libre : vous choisissez.",
+    "de": "Der Kaffee-Link ist jetzt frei wählbar: Du bestimmst den Betrag."
   }
 }
