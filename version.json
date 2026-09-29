@@ -1,11 +1,11 @@
 {
-  "version": "3.10",
+  "version": "3.11",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "Il link per offrirmi un caffè ora è a offerta libera: scegli tu quanto.",
-    "en": "The buy-me-a-coffee link is now pay-what-you-want: you choose the amount.",
-    "es": "El enlace para invitarme a un café ahora es de aportación libre: tú eliges la cantidad.",
-    "fr": "Le lien pour m'offrir un café est désormais à montant libre : vous choisissez.",
-    "de": "Der Kaffee-Link ist jetzt frei wählbar: Du bestimmst den Betrag."
+    "it": "Le colonne dei giochi e delle informazioni ricordano la larghezza che scegli, anche cambiando console.",
+    "en": "The game list and info columns now remember the width you choose, even when you switch consoles.",
+    "es": "Las columnas de juegos e información recuerdan el ancho que eliges, incluso al cambiar de consola.",
+    "fr": "Les colonnes des jeux et des infos mémorisent la largeur choisie, même en changeant de console.",
+    "de": "Die Spalten für Spiele und Infos merken sich die gewählte Breite, auch beim Wechsel der Konsole."
   }
 }
