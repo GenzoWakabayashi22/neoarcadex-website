@@ -1,11 +1,11 @@
 {
-  "version": "3.7",
+  "version": "3.8",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "La guida di installazione si apre dal sito, senza richiedere il login a GitHub.",
-    "en": "The installation guide now opens from the website, with no GitHub login required.",
-    "es": "La guía de instalación se abre desde el sitio web, sin iniciar sesión en GitHub.",
-    "fr": "Le guide d'installation s'ouvre depuis le site, sans connexion à GitHub.",
-    "de": "Die Installationsanleitung öffnet sich über die Website, ohne GitHub-Anmeldung."
+    "it": "Acquista Premium su Gumroad: la chiave arriva subito e si attiva nell'app.",
+    "en": "Buy Premium on Gumroad: your key arrives instantly and activates in the app.",
+    "es": "Compra Premium en Gumroad: la clave llega al instante y se activa en la app.",
+    "fr": "Achetez Premium sur Gumroad : la clé arrive tout de suite et s'active dans l'app.",
+    "de": "Premium bei Gumroad kaufen: Der Schlüssel kommt sofort und wird in der App aktiviert."
   }
 }
