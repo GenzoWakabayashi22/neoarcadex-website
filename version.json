@@ -1,11 +1,11 @@
 {
-  "version": "3.5",
+  "version": "3.6",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "Corretto il layout su schermi piccoli: la finestra non viene più tagliata.",
-    "en": "Fixed the layout on small screens: the window is no longer clipped.",
-    "es": "Corregido el diseño en pantallas pequeñas: la ventana ya no se recorta.",
-    "fr": "Mise en page corrigée sur petits écrans : la fenêtre n'est plus coupée.",
-    "de": "Layout auf kleinen Bildschirmen korrigiert: Das Fenster wird nicht mehr abgeschnitten."
+    "it": "Le larghezze delle colonne vengono ricordate quando cambi console.",
+    "en": "Column widths are now remembered when you switch consoles.",
+    "es": "Los anchos de columna se recuerdan al cambiar de consola.",
+    "fr": "Les largeurs de colonnes sont mémorisées lorsque vous changez de console.",
+    "de": "Spaltenbreiten werden beim Wechseln der Konsole gespeichert."
   }
 }
