@@ -1,11 +1,11 @@
 {
-  "version": "3.8",
+  "version": "3.9",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "Acquista Premium su Gumroad: la chiave arriva subito e si attiva nell'app.",
-    "en": "Buy Premium on Gumroad: your key arrives instantly and activates in the app.",
-    "es": "Compra Premium en Gumroad: la clave llega al instante y se activa en la app.",
-    "fr": "Achetez Premium sur Gumroad : la clé arrive tout de suite et s'active dans l'app.",
-    "de": "Premium bei Gumroad kaufen: Der Schlüssel kommt sofort und wird in der App aktiviert."
+    "it": "Prezzo Premium aggiornato a 9,99 € (IVA inclusa in Italia).",
+    "en": "Premium price updated to €9.99 (VAT included in Italy).",
+    "es": "Precio de Premium actualizado a 9,99 € (IVA incluido en Italia).",
+    "fr": "Prix de Premium mis à jour à 9,99 € (TVA incluse en Italie).",
+    "de": "Premium-Preis auf 9,99 € aktualisiert (in Italien inkl. MwSt.)."
   }
 }
