@@ -1,11 +1,11 @@
 {
-  "version": "3.6",
+  "version": "3.7",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "Le larghezze delle colonne vengono ricordate quando cambi console.",
-    "en": "Column widths are now remembered when you switch consoles.",
-    "es": "Los anchos de columna se recuerdan al cambiar de consola.",
-    "fr": "Les largeurs de colonnes sont mémorisées lorsque vous changez de console.",
-    "de": "Spaltenbreiten werden beim Wechseln der Konsole gespeichert."
+    "it": "La guida di installazione si apre dal sito, senza richiedere il login a GitHub.",
+    "en": "The installation guide now opens from the website, with no GitHub login required.",
+    "es": "La guía de instalación se abre desde el sitio web, sin iniciar sesión en GitHub.",
+    "fr": "Le guide d'installation s'ouvre depuis le site, sans connexion à GitHub.",
+    "de": "Die Installationsanleitung öffnet sich über die Website, ohne GitHub-Anmeldung."
   }
 }
