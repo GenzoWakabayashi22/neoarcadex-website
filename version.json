@@ -1,11 +1,11 @@
 {
-  "version": "3.12",
+  "version": "3.13",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "Corretto il link per acquistare Premium.",
-    "en": "Fixed the link to buy Premium.",
-    "es": "Corregido el enlace para comprar Premium.",
-    "fr": "Lien d'achat de Premium corrigé.",
-    "de": "Der Link zum Kauf von Premium wurde korrigiert."
+    "it": "Avvio a schermo intero dei giochi migliorato. L'audio di RetroArch è sempre attivo.",
+    "en": "Improved fullscreen game startup. RetroArch audio is always on.",
+    "es": "Inicio de juegos en pantalla completa mejorado. El audio de RetroArch siempre activo.",
+    "fr": "Lancement des jeux en plein écran amélioré. L'audio de RetroArch est toujours activé.",
+    "de": "Verbesserter Vollbild-Spielstart. RetroArch-Audio ist immer aktiviert."
   }
 }
