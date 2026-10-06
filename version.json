@@ -1,11 +1,11 @@
 {
-  "version": "3.13",
+  "version": "3.14",
   "url": "https://neoarcadex.com/",
   "notes": {
-    "it": "Avvio a schermo intero dei giochi migliorato. L'audio di RetroArch è sempre attivo.",
-    "en": "Improved fullscreen game startup. RetroArch audio is always on.",
-    "es": "Inicio de juegos en pantalla completa mejorado. El audio de RetroArch siempre activo.",
-    "fr": "Lancement des jeux en plein écran amélioré. L'audio de RetroArch est toujours activé.",
-    "de": "Verbesserter Vollbild-Spielstart. RetroArch-Audio ist immer aktiviert."
+    "it": "Corretto l'avvio dei giochi quando la cartella ROM o il disco cambiano nome: la libreria si riaggancia da sola.",
+    "en": "Fixed games not starting when the ROM folder or disk is renamed or moved: the library now re-links itself.",
+    "es": "Corregido el inicio de juegos cuando se renombra o mueve la carpeta de ROMs o el disco: la biblioteca se vuelve a enlazar sola.",
+    "fr": "Correction du lancement des jeux quand le dossier ROM ou le disque est renommé ou déplacé : la bibliothèque se reconnecte toute seule.",
+    "de": "Spielstart behoben, wenn der ROM-Ordner oder die Festplatte umbenannt oder verschoben wird: Die Bibliothek verknüpft sich selbst neu."
   }
 }
